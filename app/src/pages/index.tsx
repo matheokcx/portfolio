@@ -56,21 +56,21 @@ export default function Home() {
         <link rel="icon" href="/icon.png" />
       </Head>
 
-      <div className="w-full flex flex-col bg-white dark:bg-gradient-to-tl dark:from-blue-900 dark:to-black text-black dark:text-white bg-fixed gap-24">
+      <div className="w-full flex flex-col bg-white dark:bg-gradient-to-tl dark:from-blue-900 dark:to-black text-black dark:text-white font-roboto bg-fixed gap-24">
 
-        <div className="w-full flex flex-col-reverse lg:flex-row items-center p-8 lg:p-20 pt-32 gap-16 lg:gap-0">
+        <div className="w-full flex flex-col-reverse lg:flex-row items-center p-8 lg:p-20 pt-32 gap-16">
           <span className="w-full lg:w-1/2 flex flex-col gap-4 font-bold animate-slide_up">
-            <h3 className="text-4xl">“Pourquoi pas essayer„</h3>
-            <p className="text-gray-400">Aujourd'hui la situation a bien changé ...</p>
+            <h3 className="text-4xl">“Chaque jour est une nouvelle occasion de se dépasser.„</h3>
+            <i className="text-gray-400">- Deleplanque Mathéo</i>
           </span>
-          <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-1/2 h-96 animate-slide_up" />
+          <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-1/2 h-96 animate-slide_up shadow-lg shadow-lime-800" />
         </div>
 
         <div className="w-full flex flex-col gap-20 mt-44">
           <div className="w-full lg:h-96 dark:bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8">
             <img src="/illustration2.svg" alt="illustration" className="w-full lg:w-2/3 h-80 rounded-xl" />
-            <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-normal gap-8 lg:pl-16">
-              <h2 className="font-bold text-2xl">A propos de moi</h2>
+            <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-normal gap-8 lg:pl-8">
+              <h2 className="font-bold text-2xl lg:text-left w-full lg:w-3/4">A propos de moi</h2>
               <p className="text-lg text-center lg:text-left w-full lg:w-3/4">Je m'appelle Mathéo, j'ai 18 ans et je suis en 2e année de BUT informatique à l'IUT de Lens. Je suis passionné de développement web et souhaiterai faire une alternance dans ce domaine (à partir de février 2025).
               </p>
             </div>
