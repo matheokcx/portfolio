@@ -1,0 +1,184 @@
+{
+    "qualites": [
+        {
+            "chemin": "/autonome.png",
+            "titre": "Autonome",
+            "texte": "Avec des explications claires, je peux rapidement me mettre au travail et apprendre le reste par moi même."
+        },
+        {
+            "chemin": "/rigoureux.png",
+            "titre": "Rigoureux",
+            "texte": "Lorsque je travaille sur un projet et que j'approche de la solution final, je n'arrive pas à baisser les bras malgré les difficultés car l'objectif est proche."
+        },
+        {
+            "chemin": "/cooperatif.png",
+            "titre": "Coopératif",
+            "texte": "Travailler en équipe est pour moi un moyen d'apprendre, via des personnes externes et de pouvoir s'améliorer en aidant les autres !"
+        },
+        {
+            "chemin": "/veille.png",
+            "titre": "Veille Technologique",
+            "texte": "L'informatique est un domaine où tout va très vite (comme l'I.A. par exemple) et il faut donc se tenir au courant des dernières nouveautés. C'est ce que je fais une fois chaque semaine."
+        }
+    ],
+    "competences": [
+        {
+            "type": "langage",
+            "chemin": "/java.png",
+            "titre": "Java / JavaFx",
+            "progress": "90"
+        },
+        {
+            "type": "langage",
+            "chemin": "/html.png",
+            "titre": "Html",
+            "progress": "95"
+        },
+        {
+            "type": "langage",
+            "chemin": "/css.png",
+            "titre": "Css",
+            "progress": "95"
+        },
+        {
+            "type": "langage",
+            "chemin": "/javascript.png",
+            "titre": "JavaScript",
+            "progress": "85"
+        },
+        {
+            "type": "langage",
+            "chemin": "/typescript.png",
+            "titre": "TypeScript",
+            "progress": "80"
+        },
+        {
+            "type": "langage",
+            "chemin": "/sql.png",
+            "titre": "SQL / PLSQL",
+            "progress": "80"
+        },
+        {
+            "type": "langage",
+            "chemin": "/nodejs.png",
+            "titre": "NodeJs",
+            "progress": "75"
+        },
+        {
+            "type": "langage",
+            "chemin": "/php.png",
+            "titre": "Php",
+            "progress": "70"
+        },
+        {
+            "type": "langage",
+            "chemin": "/python.svg",
+            "titre": "Python",
+            "progress": "70"
+        },
+        {
+            "type": "langage",
+            "chemin": "/bash.png",
+            "titre": "Bash",
+            "progress": "65"
+        },
+        {
+            "type": "langage",
+            "chemin": "/powershell.png",
+            "titre": "Powershell",
+            "progress": "75"
+        },
+        {
+            "type": "langage",
+            "chemin": "/cpp.png",
+            "titre": "C++",
+            "progress": "68"
+        },
+        {
+            "type": "framework",
+            "chemin": "/nextjs.png",
+            "titre": "NextJs",
+            "progress": "90"
+        },
+        {
+            "type": "framework",
+            "chemin": "/laravel.png",
+            "titre": "Laravel",
+            "progress": "0"
+        },
+        {
+            "type": "framework",
+            "chemin": "/flask.png",
+            "titre": "Flask",
+            "progress": "50"
+        },
+        {
+            "type": "framework",
+            "chemin": "/react.png",
+            "titre": "ReactJs",
+            "progress": "90"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/vscode.png",
+            "titre": "Visual Studio Code",
+            "progress": "90"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/idea.png",
+            "titre": "Idea Inteliji",
+            "progress": "85"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/phpstorm.png",
+            "titre": "Php Storm",
+            "progress": "75"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/pypcharm.png",
+            "titre": "PypCharm",
+            "progress": "15"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/prisma.png",
+            "titre": "Prisma",
+            "progress": "70"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/git.png",
+            "titre": "Git",
+            "progress": "85"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/eclipse.png",
+            "titre": "Eclipse",
+            "progress": "60"
+        }
+    ],
+    "projets": [
+        {
+            "chemin": "/p1.png",
+            "titre": "Chatting App",
+            "techs": "NextJs - MySql - TailWindCss",
+            "description": "Application FullStack de discussion en ligne dans l'essentiel. On peut créer son compte, se connecter et ajouter d'autres personnes pour discuter avec elles puis supprimer la conversation si on le désir. Il y a un mode nuit et l'interface est responsive."
+        },
+        {
+            "chemin": "/image.jpg",
+            "titre": "FlatCraft",
+            "techs": "JavaFx",
+            "description": "Reprise du célèbre jeu Minecraft en 2D dans son langage d'origine : le Java, ici JavaFx pour la création d'une interface de jeu et java pour l'arrière plan, avec la structure MVC."
+        },
+        {
+            "chemin": "/image.jpg",
+            "titre": "Application Médical",
+            "techs": "JavaFx - Git",
+            "description": "Un projet d'examen avec une application de gestion des patients et des médecins d'un cabinet de remise en forme / kiné."
+        }
+    ]
+}
