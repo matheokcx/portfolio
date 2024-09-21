@@ -57,28 +57,29 @@ export default function Home() {
         <link rel="icon" href="/icon.png" />
       </Head>
 
-      <div className="w-full flex flex-col bg-gradient-to-tl from-blue-900 to-black bg-fixed gap-24">
-        <div className="w-full flex flex-row items-center p-20 pt-32 ">
-          <span className="w-1/2 flex flex-col gap-4 text-white font-bold animate-slide_up">
+      <div className="w-full flex flex-col bg-white dark:bg-gradient-to-tl dark:from-blue-900 dark:to-black text-black dark:text-white bg-fixed gap-24">
+
+        <div className="w-full flex flex-col-reverse lg:flex-row items-center p-8 lg:p-20 pt-32 gap-16 lg:gap-0">
+          <span className="w-full lg:w-1/2 flex flex-col gap-4 font-bold animate-slide_up">
             <h3 className="text-4xl">“Pourquoi pas essayer„</h3>
             <p className="text-gray-400">Aujourd'hui la situation a bien changé ...</p>
           </span>
-          <Image src="/illustration1.jpg" alt="Illustration 1" width="100" height="100" className="rounded-2xl w-1/2 h-96 animate-slide_up" />
+          <Image src="/illustration1.jpg" alt="Illustration 1" width="100" height="100" className="rounded-2xl w-full lg:w-1/2 h-96 animate-slide_up" />
         </div>
 
-        <div className="w-full flex flex-col gap-20 mt-52">
-          <div className="w-full h-96 bg-gray-900 rounded-xl flex flex-row items-center gap-8 p-8">
-            <Image src="/illustration2.svg" alt="illustration" width="100" height="100" className="w-2/3 h-80 rounded-xl" />
-            <div className="w-1/2 flex flex-col gap-8 pl-16">
+        <div className="w-full flex flex-col gap-20 mt-44">
+          <div className="w-full lg:h-96 bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8">
+            <Image src="/illustration2.svg" alt="illustration" width="100" height="100" className="w-full lg:w-2/3 h-80 rounded-xl" />
+            <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-normal gap-8 lg:pl-16">
               <h2 className="font-bold text-2xl">A propos de moi</h2>
-              <p className="text-lg w-3/4">Je m'appelle Mathéo, j'ai 18 ans et je suis en 2e année de BUT informatique à l'IUT de Lens. Je suis passionné de développement web et souhaiterai faire une alternance dans ce domaine (à partir de février 2025).
+              <p className="text-lg text-center lg:text-left w-full lg:w-3/4">Je m'appelle Mathéo, j'ai 18 ans et je suis en 2e année de BUT informatique à l'IUT de Lens. Je suis passionné de développement web et souhaiterai faire une alternance dans ce domaine (à partir de février 2025).
               </p>
             </div>
           </div>
 
           <div className="w-full bg-gray-900 rounded-xl flex flex-col gap-20 p-8">
             <h2 className="w-full text-center font-bold text-3xl">Mes qualités</h2>
-            <div className="w-full flex flex-row items-start gap-4">
+            <div className="w-full flex flex-col lg:flex-row items-start gap-4">
               {qualites.map((e: any, index: any) => <Qualite imagePath={e.chemin} titre={e.titre} texte={e.texte} key={index} />)}
             </div>
           </div>
@@ -86,7 +87,7 @@ export default function Home() {
 
         <div className="w-full bg-gray-900 rounded-xl flex flex-col gap-12 p-8">
           <h2 className="font-bold text-center text-3xl w-full">Mes compétences</h2>
-          <div className="w-full flex flex-row flex-wrap justify-center gap-6">
+          <div className="w-full flex flex-col lg:flex-row lg:flex-wrap justify-center gap-6">
             {choixLogiciel ? competences.filter((e: any) => e.type === "logiciel").map((e: any, index: any) => <Competence imagePath={e.chemin} titre={e.titre} progression={e.progress} key={index} />) : null}
             {choixLangage ? competences.filter((e: any) => e.type === "langage").map((e: any, index: any) => <Competence imagePath={e.chemin} titre={e.titre} progression={e.progress} key={index} />) : null}
             {choixFramework ? competences.filter((e: any) => e.type === "framework").map((e: any, index: any) => <Competence imagePath={e.chemin} titre={e.titre} progression={e.progress} key={index} />) : null}
@@ -100,7 +101,7 @@ export default function Home() {
 
         <div className="w-full bg-gray-900 rounded-xl flex flex-col gap-8 p-8">
           <h2 className="font-bold text-center w-full text-3xl">Mes meilleurs projets</h2>
-          <div className="w-full flex flex-row justify-center gap-16 p-4">
+          <div className="w-full flex flex-col lg:flex-row justify-center gap-16 p-4">
             {projets.map((e: any, index: any) => <Projet imagePath={e.chemin} titre={e.titre} techs={e.techs} description={e.description} key={index} />)}
           </div>
         </div>

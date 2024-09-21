@@ -14,7 +14,7 @@ const config: Config = {
       },
       keyframes: {
         slide_up: {
-          '0%': { 'margin-top': '200px', 'opacity': '0' },
+          '0%': { 'margin-top': '300px', 'opacity': '0' },
           '100%': { 'margin-top': '0px', 'opacity': '100%' }
         }
       },
