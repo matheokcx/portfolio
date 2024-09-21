@@ -3,17 +3,17 @@
         {
             "chemin": "/autonome.png",
             "titre": "Autonome",
-            "texte": "Avec des explications claires, je peux rapidement me mettre au travail et apprendre le reste par moi même."
+            "texte": "Avec des explications claires, je peux rapidement me mettre au travail et apprendre le reste par moi-même."
         },
         {
             "chemin": "/rigoureux.png",
             "titre": "Rigoureux",
-            "texte": "Lorsque je travaille sur un projet et que j'approche de la solution final, je n'arrive pas à baisser les bras malgré les difficultés car l'objectif est proche."
+            "texte": "Lorsque je travaille sur un projet et que j'approche de la solution finale, je n'arrive pas à baisser les bras malgré les difficultés car l'objectif est proche."
         },
         {
             "chemin": "/cooperatif.png",
             "titre": "Coopératif",
-            "texte": "Travailler en équipe est pour moi un moyen d'apprendre, via des personnes externes et de pouvoir s'améliorer en aidant les autres !"
+            "texte": "Travailler en équipe est pour moi un moyen d'apprendre, via des personnes externes, et de pouvoir s'améliorer en aidant les autres !"
         },
         {
             "chemin": "/veille.png",
@@ -166,13 +166,13 @@
             "chemin": "/p1.png",
             "titre": "Chatting App",
             "techs": "NextJs - MySql - TailWindCss",
-            "description": "Application FullStack de discussion en ligne dans l'essentiel. On peut créer son compte, se connecter et ajouter d'autres personnes pour discuter avec elles puis supprimer la conversation si on le désir. Il y a un mode nuit et l'interface est responsive."
+            "description": "Application FullStack de discussion en ligne dans l'essentiel. On peut créer son compte, se connecter et ajouter d'autres personnes pour discuter avec elles, puis supprimer la conversation si on le désire. Il y a un mode nuit et l'interface est responsive."
         },
         {
             "chemin": "/image.jpg",
             "titre": "FlatCraft",
             "techs": "JavaFx",
-            "description": "Reprise du célèbre jeu Minecraft en 2D dans son langage d'origine : le Java, ici JavaFx pour la création d'une interface de jeu et java pour l'arrière plan, avec la structure MVC."
+            "description": "Reprise du célèbre jeu Minecraft en 2D dans son langage d'origine : le Java, ici JavaFx pour la création d'une interface de jeu et Java pour l'arrière-plan, avec la structure MVC."
         },
         {
             "chemin": "/image.jpg",
