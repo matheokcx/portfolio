@@ -20,9 +20,6 @@ const config: Config = {
       },
       animation: {
         slide_up: 'slide_up 2s ease-in'
-      },
-      fontFamily: {
-        'roboto': ['Roboto', 'bold', 'woff']
       }
     },
   },

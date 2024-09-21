@@ -56,7 +56,7 @@ export default function Home() {
         <link rel="icon" href="/icon.png" />
       </Head>
 
-      <div className="w-full flex flex-col bg-white dark:bg-gradient-to-tl dark:from-blue-900 dark:to-black text-black dark:text-white font-roboto bg-fixed gap-24">
+      <div className="w-full flex flex-col bg-white dark:bg-gradient-to-tl dark:from-blue-900 dark:to-black text-black dark:text-white font-sans bg-fixed gap-24">
 
         <div className="w-full flex flex-col-reverse lg:flex-row items-center p-8 lg:p-20 pt-32 gap-16">
           <span className="w-full lg:w-1/2 flex flex-col gap-4 font-bold animate-slide_up">
