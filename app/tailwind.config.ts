@@ -22,7 +22,7 @@ const config: Config = {
         slide_up: 'slide_up 2s ease-in'
       },
       fontFamily: {
-        'roboto': ['Roboto', 'bold']
+        'roboto': ['Roboto', 'bold', 'woff']
       }
     },
   },
