@@ -68,7 +68,7 @@ export default function Home() {
         </div>
 
         <div className="w-full flex flex-col gap-20 mt-44">
-          <div className="w-full lg:h-96 bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8">
+          <div className="w-full lg:h-96 dark:bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8">
             <Image src="/illustration2.svg" alt="illustration" width="100" height="100" className="w-full lg:w-2/3 h-80 rounded-xl" />
             <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-normal gap-8 lg:pl-16">
               <h2 className="font-bold text-2xl">A propos de moi</h2>
@@ -77,7 +77,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full bg-gray-900 rounded-xl flex flex-col gap-20 p-8">
+          <div className="w-full dark:bg-gray-900 rounded-xl flex flex-col gap-20 p-8">
             <h2 className="w-full text-center font-bold text-3xl">Mes qualités</h2>
             <div className="w-full flex flex-col lg:flex-row items-start gap-4">
               {qualites.map((e: any, index: any) => <Qualite imagePath={e.chemin} titre={e.titre} texte={e.texte} key={index} />)}
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full bg-gray-900 rounded-xl flex flex-col gap-12 p-8">
+        <div className="w-full dark:bg-gray-900 rounded-xl flex flex-col gap-12 p-8">
           <h2 className="font-bold text-center text-3xl w-full">Mes compétences</h2>
           <div className="w-full flex flex-col lg:flex-row lg:flex-wrap justify-center gap-6">
             {choixLogiciel ? competences.filter((e: any) => e.type === "logiciel").map((e: any, index: any) => <Competence imagePath={e.chemin} titre={e.titre} progression={e.progress} key={index} />) : null}
@@ -99,14 +99,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full bg-gray-900 rounded-xl flex flex-col gap-8 p-8">
+        <div className="w-full dark:bg-gray-900 rounded-xl flex flex-col gap-8 p-8">
           <h2 className="font-bold text-center w-full text-3xl">Mes meilleurs projets</h2>
           <div className="w-full flex flex-col lg:flex-row justify-center gap-16 p-4">
             {projets.map((e: any, index: any) => <Projet imagePath={e.chemin} titre={e.titre} techs={e.techs} description={e.description} key={index} />)}
           </div>
         </div>
 
-        <div className="w-full flex flex-row gap-14 justify-center items-center bg-gray-900 rounded-xl p-4">
+        <div className="w-full flex flex-row gap-14 justify-center items-center border-2 border-gray-400 dark:border-0 dark:bg-gray-900 rounded-xl p-4">
           <a href="https://github.com/matheokcx" target="_blank"><Image src="/github.png" alt="GitHub" width="100" height="100"
             className="w-16 h-16 transition-transform hover:scale-105" /></a>
           <a href="https://www.linkedin.com/in/math%C3%A9o-deleplanque-4a4725329/" target="_blank"><Image
