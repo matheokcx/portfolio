@@ -87,7 +87,7 @@ export default function Home() {
 
         <div className="w-full dark:bg-gray-900 rounded-xl flex flex-col gap-12 p-8">
           <h2 className="font-bold text-center text-3xl w-full">Mes compétences</h2>
-          <div className="w-full flex flex-col lg:flex-row lg:flex-wrap justify-center gap-6">
+          <div className="w-full flex flex-col lg:flex-row lg:flex-wrap items-center lg:items-normal justify-center gap-6">
             {choixLogiciel ? competences.filter((e: any) => e.type === "logiciel").map((e: any, index: any) => <Competence imagePath={e.chemin} titre={e.titre} progression={e.progress} key={index} />) : null}
             {choixLangage ? competences.filter((e: any) => e.type === "langage").map((e: any, index: any) => <Competence imagePath={e.chemin} titre={e.titre} progression={e.progress} key={index} />) : null}
             {choixFramework ? competences.filter((e: any) => e.type === "framework").map((e: any, index: any) => <Competence imagePath={e.chemin} titre={e.titre} progression={e.progress} key={index} />) : null}
