@@ -166,19 +166,22 @@
             "chemin": "/p1.png",
             "titre": "Chatting App",
             "techs": "NextJs - MySql - TailWindCss",
-            "description": "Application FullStack de discussion en ligne dans l'essentiel. On peut créer son compte, se connecter et ajouter d'autres personnes pour discuter avec elles, puis supprimer la conversation si on le désire. Il y a un mode nuit et l'interface est responsive."
+            "description": "Application FullStack de discussion en ligne dans l'essentiel. On peut créer son compte, se connecter et ajouter d'autres personnes pour discuter avec elles, puis supprimer la conversation si on le désire. Il y a un mode nuit et l'interface est responsive.",
+            "link": "https://github.com/matheokcx/chatting_app"
         },
         {
             "chemin": "/image.jpg",
             "titre": "FlatCraft",
             "techs": "JavaFx",
-            "description": "Reprise du célèbre jeu Minecraft en 2D dans son langage d'origine : le Java, ici JavaFx pour la création d'une interface de jeu et Java pour l'arrière-plan, avec la structure MVC."
+            "description": "Reprise du célèbre jeu Minecraft en 2D dans son langage d'origine : le Java, ici JavaFx pour la création d'une interface de jeu et Java pour l'arrière-plan, avec la structure MVC.",
+            "link": "https://github.com/matheokcx"
         },
         {
             "chemin": "/image.jpg",
             "titre": "Application Médical",
             "techs": "JavaFx - Git",
-            "description": "Un projet d'examen avec une application de gestion des patients et des médecins d'un cabinet de remise en forme / kiné."
+            "description": "Un projet d'examen avec une application de gestion des patients et des médecins d'un cabinet de remise en forme / kiné.",
+            "link": "https://github.com/matheokcx"
         }
     ]
 }

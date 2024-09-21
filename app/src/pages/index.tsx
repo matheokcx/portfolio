@@ -115,7 +115,7 @@ export default function Home() {
         <div className="w-full dark:bg-gray-900 rounded-xl flex flex-col gap-8 p-8">
           <h2 className="font-bold text-center w-full text-3xl">Mes meilleurs projets</h2>
           <div className="w-full flex flex-col lg:flex-row justify-center gap-16 p-4">
-            {projets.map((e: any, index: any) => <Projet imagePath={e.chemin} titre={e.titre} techs={e.techs} description={e.description} key={index} />)}
+            {projets.map((e: any, index: any) => <Projet imagePath={e.chemin} titre={e.titre} techs={e.techs} description={e.description} lien={e.link} key={index} />)}
           </div>
         </div>
 
