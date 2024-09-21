@@ -1,8 +1,7 @@
 import Head from "next/head"
-import Image from "next/image";
 import Qualite from "../components/Qualite"
-import Competence from "@/components/Competence";
-import Projet from "@/components/Projet";
+import Competence from "@/components/Competence"
+import Projet from "@/components/Projet"
 import { useState, useEffect } from "react"
 
 export default function Home() {
@@ -64,12 +63,12 @@ export default function Home() {
             <h3 className="text-4xl">“Pourquoi pas essayer„</h3>
             <p className="text-gray-400">Aujourd'hui la situation a bien changé ...</p>
           </span>
-          <Image src="/illustration1.jpg" alt="Illustration 1" width="100" height="100" className="rounded-2xl w-full lg:w-1/2 h-96 animate-slide_up" />
+          <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-1/2 h-96 animate-slide_up" />
         </div>
 
         <div className="w-full flex flex-col gap-20 mt-44">
           <div className="w-full lg:h-96 dark:bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8">
-            <Image src="/illustration2.svg" alt="illustration" width="100" height="100" className="w-full lg:w-2/3 h-80 rounded-xl" />
+            <img src="/illustration2.svg" alt="illustration" className="w-full lg:w-2/3 h-80 rounded-xl" />
             <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-normal gap-8 lg:pl-16">
               <h2 className="font-bold text-2xl">A propos de moi</h2>
               <p className="text-lg text-center lg:text-left w-full lg:w-3/4">Je m'appelle Mathéo, j'ai 18 ans et je suis en 2e année de BUT informatique à l'IUT de Lens. Je suis passionné de développement web et souhaiterai faire une alternance dans ce domaine (à partir de février 2025).
@@ -107,10 +106,8 @@ export default function Home() {
         </div>
 
         <div className="w-full flex flex-row gap-14 justify-center items-center border-2 border-gray-400 dark:border-0 dark:bg-gray-900 rounded-xl p-4">
-          <a href="https://github.com/matheokcx" target="_blank"><Image src="/github.png" alt="GitHub" width="100" height="100"
-            className="w-16 h-16 transition-transform hover:scale-105" /></a>
-          <a href="https://www.linkedin.com/in/math%C3%A9o-deleplanque-4a4725329/" target="_blank"><Image
-            src="/linkedin.png" alt="GitHub" width="100" height="100" className="w-12 h-12 transition-transform hover:scale-105" /></a>
+          <a href="https://github.com/matheokcx" target="_blank"><img src="/github.png" alt="GitHub" className="w-16 h-16 transition-transform hover:scale-105" /></a>
+          <a href="https://www.linkedin.com/in/math%C3%A9o-deleplanque-4a4725329/" target="_blank"><img src="/linkedin.png" alt="GitHub" className="w-12 h-12 transition-transform hover:scale-105" /></a>
         </div>
 
       </div>
