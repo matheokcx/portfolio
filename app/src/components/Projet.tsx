@@ -13,7 +13,7 @@ export default function Projet({ imagePath, titre, techs, description, lien }: p
                 <img src={imagePath} alt="Image du projet" className="w-5/6 h-40 rounded-xl" />
                 <h3 className="w-full text-center font-bold text-lg">{titre}</h3>
                 <p className="font-bold w-full text-center text-opacity-50">{techs}</p>
-                <i className="text-center">{description}</i>
+                <i className="text-center h-1/3">{description}</i>
                 <a href={lien} target="_blank"><img src="/plus.png" alt="Voir plus" className="w-16 h-16 hover:rotate-3" /></a>
             </div>
         </>

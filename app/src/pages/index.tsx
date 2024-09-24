@@ -63,7 +63,7 @@ export default function Home() {
             <h3 className="text-4xl w-full lg:w-auto">“Chaque jour est une nouvelle occasion de se dépasser.„</h3>
             <i className="text-gray-400">- Deleplanque Mathéo</i>
           </span>
-          <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-1/2 h-96 animate-slide_up shadow-lg shadow-lime-800" />
+          <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-1/2 h-96 animate-slide_up shadow-lg shadow-blue-400 transition-transform hover:scale-102 hover:-translate-y-2" />
         </div>
 
         <div className="w-full flex flex-col gap-20 mt-44">
@@ -71,7 +71,7 @@ export default function Home() {
             <img src="/illustration2.svg" alt="illustration" className="w-full lg:w-2/3 h-80 rounded-xl" />
             <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-normal gap-8 lg:pl-8">
               <h2 className="font-bold text-2xl text-center lg:text-left w-full lg:w-3/4">A propos de moi</h2>
-              <p className="text-lg text-center lg:text-left w-full lg:w-3/4">Je m'appelle Mathéo, j'ai 18 ans et je suis en 2e année de BUT informatique à l'IUT de Lens. Je suis passionné de développement web et souhaiterais faire une alternance dans ce domaine (à partir de février 2025).
+              <p className="text-lg text-center lg:text-left w-full lg:w-3/4">Je m'appelle Mathéo, j'ai 18 ans et je suis en 2e année de BUT informatique à l'IUT de Lens. Je suis passionné de développement web et souhaiterais faire une alternance dans ce domaine (à partir de février 2025 jusqu'en juillet 2026).
               </p>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function Home() {
         <div className="w-full lg:h-[400px] dark:bg-gray-900 rounded-xl flex flex-col lg:flex-row gap-12 p-8">
           <h2 className="w-full lg:w-2/6 font-bold text-3xl text-center lg:-rotate-90">Mes formations</h2>
           <div className="w-full lg:w-2/6 flex flex-col items-center gap-4 p-4 rounded-xl border-2 border-gray-400 dark:border-0  dark:bg-gray-700">
-            <img src="/iut.png" alt="Iut de Lens" className="w-5/6 h-44" />
+            <img src="/iut.png" alt="Iut de Lens" className="w-4/6 h-44" />
             <h2 className="text-xl font-bold">BUT Informatique</h2>
             <p>Iut de Lens - 2023/2026</p>
           </div>
@@ -120,9 +120,9 @@ export default function Home() {
         </div>
 
         <div className="w-full flex flex-row gap-14 justify-center items-center border-2 border-gray-400 dark:border-0 dark:bg-gray-900 rounded-xl p-4">
-          <a href="https://github.com/matheokcx" target="_blank"><img src="/github.png" alt="GitHub" className="w-16 h-16 transition-transform hover:scale-105" /></a>
-          <a href="https://www.linkedin.com/in/math%C3%A9o-deleplanque-4a4725329/" target="_blank"><img src="/linkedin.png" alt="GitHub" className="w-14 h-14 transition-transform hover:scale-105" /></a>
-          <a href="mailto:matheo.deleplanque@gmail.com" target="_blank"><img src="/mail.png" alt="Mail" className="w-16 h-16 transition-transform hover:scale-105" /></a>
+          <a href="https://github.com/matheokcx" target="_blank"><img src="/github.png" alt="GitHub" className="w-12 h-12 transition-transform hover:scale-105" /></a>
+          <a href="https://www.linkedin.com/in/math%C3%A9o-deleplanque-4a4725329/" target="_blank"><img src="/linkedin.png" alt="GitHub" className="w-10 h-10 transition-transform hover:scale-105" /></a>
+          <a href="mailto:matheo.deleplanque@gmail.com" target="_blank"><img src="/mail.png" alt="Mail" className="w-12 h-12 transition-transform hover:scale-105" /></a>
         </div>
 
       </div>
