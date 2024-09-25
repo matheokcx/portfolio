@@ -3,8 +3,11 @@ import Qualite from "../components/Qualite"
 import Competence from "@/components/Competence"
 import Projet from "@/components/Projet"
 import { useState, useEffect } from "react"
+import { useRouter, NextRouter } from "next/router"
 
 export default function Home() {
+
+  const router: NextRouter = useRouter();
 
   const [qualites, setQualites] = useState<Array<any>>([]);
   const [competences, setCompetences] = useState<Array<any>>([]);
@@ -58,7 +61,9 @@ export default function Home() {
 
       <div className="w-full flex flex-col bg-white dark:bg-gradient-to-tl dark:from-blue-900 dark:to-black text-black dark:text-white font-sans bg-fixed gap-24">
 
-        <div className="w-full flex flex-col-reverse lg:flex-row items-center p-8 lg:p-20 pt-32 gap-16">
+        <img src="/english.png" alt="Portfolio en anglais" width="60" height="60" onClick={() => router.push("/english")} className="absolute top-4 right-4 hover:cursor-pointer" />
+
+        <div className="w-full flex flex-col-reverse lg:flex-row items-center p-8 lg:p-20 pt-36 gap-16">
           <span className="w-full lg:w-1/2 flex flex-col gap-4 font-bold animate-slide_up">
             <h3 className="text-4xl w-full lg:w-auto">“Chaque jour est une nouvelle occasion de se dépasser.„</h3>
             <i className="text-gray-400">- Deleplanque Mathéo</i>
@@ -98,6 +103,29 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="w-full dark:bg-gray-900 rounded-xl flex flex-col items-center gap-8 p-8">
+          <h2 className="w-full lg:w-2/6 font-bold text-3xl text-center">Mes Expériences</h2>
+          <div className="w-2/3 rounded-xl bg-gray-700 flex flex-col p-6">
+            <h2 className="w-full lg:w-2/6 font-bold text-xl">Chef de caisse</h2>
+            <p>GPE Leader - Aout 2024</p>
+            <ul>
+              <li>Réalisation de l'inventaire</li>
+              <li>Mise en place des articles</li>
+              <li>Gestion des paiemants clients</li>
+              <li>Nettoyage du poste de travail</li>
+            </ul>
+          </div>
+          <div className="w-2/3 rounded-xl bg-gray-700 flex flex-col p-6">
+            <h2 className="w-full lg:w-2/6 font-bold text-xl">Stage Administration</h2>
+            <p>Mairie de Liévin - Janvier 2020</p>
+            <ul>
+              <li>Préparation des enveloppes</li>
+              <li>Accueil des personnes</li>
+              <li>Transport du matériel</li>
+            </ul>
+          </div>
+        </div>
+
         <div className="w-full dark:bg-gray-900 rounded-xl flex flex-col gap-12 p-8">
           <h2 className="font-bold text-center text-3xl w-full">Mes compétences</h2>
           <div className="w-full flex flex-col lg:flex-row lg:flex-wrap items-center lg:items-normal justify-center gap-6">
@@ -125,7 +153,7 @@ export default function Home() {
           <a href="mailto:matheo.deleplanque@gmail.com" target="_blank"><img src="/mail.png" alt="Mail" className="w-12 h-12 transition-transform hover:scale-105" /></a>
         </div>
 
-      </div>
+      </div >
     </>
   )
 }

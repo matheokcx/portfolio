@@ -1,0 +1,187 @@
+{
+    "qualites": [
+        {
+            "chemin": "/autonome.png",
+            "titre": "Independent",
+            "texte": "With good explainations, I can work speedly and learn the other things by myself."
+        },
+        {
+            "chemin": "/rigoureux.png",
+            "titre": "Rigorous",
+            "texte": "When I work on a project and I am close of the end solution, I can't give up because the goal is close."
+        },
+        {
+            "chemin": "/cooperatif.png",
+            "titre": "Cooperative",
+            "texte": "Work with a team is for me a way to learn, via some external persons, and to increase myself in same time I help others !"
+        },
+        {
+            "chemin": "/veille.png",
+            "titre": "Technological monitoring",
+            "texte": "IT is a topic where things are not static, it's fast (like I.A. for example) and we must to be okay with last techs."
+        }
+    ],
+    "competences": [
+        {
+            "type": "langage",
+            "chemin": "/java.png",
+            "titre": "Java / JavaFx",
+            "progress": "90"
+        },
+        {
+            "type": "langage",
+            "chemin": "/html.png",
+            "titre": "Html",
+            "progress": "95"
+        },
+        {
+            "type": "langage",
+            "chemin": "/css.png",
+            "titre": "Css",
+            "progress": "95"
+        },
+        {
+            "type": "langage",
+            "chemin": "/javascript.png",
+            "titre": "JavaScript",
+            "progress": "85"
+        },
+        {
+            "type": "langage",
+            "chemin": "/typescript.png",
+            "titre": "TypeScript",
+            "progress": "80"
+        },
+        {
+            "type": "langage",
+            "chemin": "/sql.png",
+            "titre": "SQL / PLSQL",
+            "progress": "80"
+        },
+        {
+            "type": "langage",
+            "chemin": "/nodejs.png",
+            "titre": "NodeJs",
+            "progress": "75"
+        },
+        {
+            "type": "langage",
+            "chemin": "/php.png",
+            "titre": "Php",
+            "progress": "70"
+        },
+        {
+            "type": "langage",
+            "chemin": "/python.svg",
+            "titre": "Python",
+            "progress": "70"
+        },
+        {
+            "type": "langage",
+            "chemin": "/bash.png",
+            "titre": "Bash",
+            "progress": "65"
+        },
+        {
+            "type": "langage",
+            "chemin": "/powershell.png",
+            "titre": "Powershell",
+            "progress": "75"
+        },
+        {
+            "type": "langage",
+            "chemin": "/cpp.png",
+            "titre": "C++",
+            "progress": "68"
+        },
+        {
+            "type": "framework",
+            "chemin": "/nextjs.png",
+            "titre": "NextJs",
+            "progress": "90"
+        },
+        {
+            "type": "framework",
+            "chemin": "/laravel.png",
+            "titre": "Laravel",
+            "progress": "0"
+        },
+        {
+            "type": "framework",
+            "chemin": "/flask.png",
+            "titre": "Flask",
+            "progress": "50"
+        },
+        {
+            "type": "framework",
+            "chemin": "/react.png",
+            "titre": "ReactJs",
+            "progress": "90"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/vscode.png",
+            "titre": "Visual Studio Code",
+            "progress": "90"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/idea.png",
+            "titre": "Idea Inteliji",
+            "progress": "85"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/phpstorm.png",
+            "titre": "Php Storm",
+            "progress": "75"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/pypcharm.png",
+            "titre": "PypCharm",
+            "progress": "15"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/prisma.png",
+            "titre": "Prisma",
+            "progress": "70"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/git.png",
+            "titre": "Git",
+            "progress": "85"
+        },
+        {
+            "type": "logiciel",
+            "chemin": "/eclipse.png",
+            "titre": "Eclipse",
+            "progress": "60"
+        }
+    ],
+    "projets": [
+        {
+            "chemin": "/p1.png",
+            "titre": "Chatting App",
+            "techs": "NextJs - MySql - TailWindCss",
+            "description": "FullStack essential App of online chatting . We can create an account, connect to the account, add other users to talk with them, and delete the chat if we want. There is a night mode and the app displays well on mobile.",
+            "link": "https://github.com/matheokcx/chatting_app"
+        },
+        {
+            "chemin": "/image.jpg",
+            "titre": "FlatCraft",
+            "techs": "JavaFx",
+            "description": "Homemade version of the famous game Minecraft in 2 dimensions with him origin programming language : Java, here JavaFx for the game interface creation and Java for the logic of the game, with MVC structure",
+            "link": "https://github.com/matheokcx"
+        },
+        {
+            "chemin": "/image.jpg",
+            "titre": "Medical Application",
+            "techs": "JavaFx - Git",
+            "description": "An Exam project with an app of management of patients and doctors of a fitness studio.",
+            "link": "https://github.com/matheokcx"
+        }
+    ]
+}
