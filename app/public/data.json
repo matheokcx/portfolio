@@ -177,7 +177,7 @@
             "link": "https://github.com/matheokcx"
         },
         {
-            "chemin": "/image.jpg",
+            "chemin": "/p2.png",
             "titre": "Application Médical",
             "techs": "JavaFx - Git",
             "description": "Un projet d'examen avec une application de gestion des patients et des médecins d'un cabinet de remise en forme / kiné.",
