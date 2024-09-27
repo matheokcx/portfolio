@@ -67,7 +67,7 @@ export default function Home() {
                     <span className="w-full lg:w-3/5 flex flex-col gap-6 font-bold animate-slide_up">
                         <h3 className="text-5xl font-bold w-full lg:w-auto">“Each day is a change to challenge himself.„</h3>
                         <p className="text-gray-400">- Deleplanque Mathéo</p>
-                        <button className="w-1/2 lg:w-1/5 h-12 rounded-3xl text-white font-extrabold bg-gradient-to-br from-purple-700 to-blue-800 transition-transform hover:translate-x-2" ><a href="mailto:matheo.deleplanque@gmail.com" target="_blank">Contact ></a></button>
+                        <button className="w-1/2 lg:w-1/5 h-12 rounded-3xl text-white font-extrabold bg-gradient-to-br from-purple-700 to-blue-800 transition-transform hover:translate-x-2" ><a href="mailto:matheo.deleplanque@gmail.com" target="_blank">Contact</a></button>
                     </span>
                     <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-2/5 h-96 animate-slide_up shadow-lg transition-transform hover:scale-102 hover:-translate-y-2" />
                 </div>
