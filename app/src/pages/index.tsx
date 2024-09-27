@@ -72,8 +72,8 @@ export default function Home() {
           <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-2/5 h-96 animate-slide_up shadow-lg transition-transform hover:scale-102 hover:-translate-y-2" />
         </div>
 
-        <div className="w-11/12 flex flex-col gap-20 mt-44">
-          <div className="w-full lg:h-96 dark:bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8">
+        <div className="w-11/12   flex flex-col gap-20 mt-44">
+          <div className="w-full lg:h-[600px] dark:bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8">
             <img src="/illustration2.svg" alt="illustration" className="w-full lg:w-2/3 h-80 rounded-xl" />
             <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-normal gap-8 lg:pl-8">
               <h2 className="text-4xl font-bold text-center lg:text-left w-full lg:w-3/4">A propos de moi</h2>
@@ -83,14 +83,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col gap-20 p-8 mt-24 text-white">
+        <div className="w-11/12 lg:h-[650px] bg-gray-900 rounded-3xl flex flex-col gap-20 p-8 mt-24 text-white">
           <h2 className="w-full text-center font-bold text-4xl">Mes qualités</h2>
           <div className="w-full flex flex-col lg:flex-row items-start gap-4">
             {qualites.map((e: any, index: any) => <Qualite imagePath={e.chemin} titre={e.titre} texte={e.texte} key={index} />)}
           </div>
         </div>
 
-        <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col gap-12 p-12 text-white">
+        <div className="w-11/12 lg:h-[600px] bg-gray-900 rounded-3xl flex flex-col gap-12 p-12 text-white">
           <h2 className="w-full font-bold text-4xl text-center">Mes formations</h2>
           <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8">
             <div className="w-full lg:w-2/6 flex flex-col items-center gap-4 p-4 rounded-xl bg-white dark:bg-gray-700 text-black dark:text-white">
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col items-center gap-8 p-16 text-white">
+        <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col items-center gap-8 p-8 lg:p-20 text-white">
           <h2 className="w-full lg:w-2/6 font-bold text-4xl text-center">Mes Expériences</h2>
           <div className="w-full lg:w-2/3 rounded-xl bg-gray-700 flex flex-col p-6 transition-transform hover:translate-x-2">
             <h2 className="w-full lg:w-2/6 font-bold text-xl">Chef de caisse</h2>
@@ -143,7 +143,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col gap-8 p-12 text-white">
+        <div className="w-11/12 lg:h-[650px] bg-gray-900 rounded-3xl flex flex-col gap-8 p-12 text-white">
           <h2 className="font-bold text-center w-full text-3xl">Mes meilleurs projets</h2>
           <div className="w-full flex flex-col lg:flex-row justify-center gap-16 p-4">
             {projets.map((e: any, index: any) => <Projet imagePath={e.chemin} titre={e.titre} techs={e.techs} description={e.description} lien={e.link} key={index} />)}

@@ -65,32 +65,32 @@ export default function Home() {
 
                 <div className="w-11/12 flex flex-col-reverse lg:flex-row items-center p-8 lg:p-20 pt-36 gap-8">
                     <span className="w-full lg:w-3/5 flex flex-col gap-6 font-bold animate-slide_up">
-                        <h3 className="text-5xl font-bold w-full lg:w-auto">“Each day is a change to challenge himself.„</h3>
+                        <h3 className="text-5xl font-bold w-full lg:w-auto">“Each day is a chance to challenge himself.„</h3>
                         <p className="text-gray-400">- Deleplanque Mathéo</p>
                         <button className="w-1/2 lg:w-1/5 h-12 rounded-3xl text-white font-extrabold bg-gradient-to-br from-purple-700 to-blue-800 transition-transform hover:translate-x-2" ><a href="mailto:matheo.deleplanque@gmail.com" target="_blank">Contact</a></button>
                     </span>
                     <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-2/5 h-96 animate-slide_up shadow-lg transition-transform hover:scale-102 hover:-translate-y-2" />
                 </div>
 
-                <div className="w-11/12 flex flex-col gap-20 mt-44">
-                    <div className="w-full lg:h-96 dark:bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8">
+                <div className="w-11/12  flex flex-col gap-20 mt-44">
+                    <div className="w-full lg:h-[600px] dark:bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8">
                         <img src="/illustration2.svg" alt="illustration" className="w-full lg:w-2/3 h-80 rounded-xl" />
                         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-normal gap-8 lg:pl-8">
                             <h2 className="text-4xl font-bold text-center lg:text-left w-full lg:w-3/4">About me</h2>
-                            <p className="text-lg text-center lg:text-left w-full lg:w-3/4">My name is Mathéo, I'm 18 years old and I'm passionate about the IT and web developpement since 3 years.
+                            <p className="text-lg text-center lg:text-left w-full lg:w-3/4">My name is Mathéo, I'm 18 years old and I'm passionate about the IT and web developpement since 3 years. Actually, I'am searching an alternance in web developpement will start in february 2025 and finish in july 2026.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col gap-20 p-8 mt-24 text-white">
+                <div className="w-11/12 lg:h-[650px] bg-gray-900 rounded-3xl flex flex-col gap-20 p-8 mt-24 text-white">
                     <h2 className="w-full text-center font-bold text-4xl">Qualities</h2>
                     <div className="w-full flex flex-col lg:flex-row items-start gap-4">
                         {qualites.map((e: any, index: any) => <Qualite imagePath={e.chemin} titre={e.titre} texte={e.texte} key={index} />)}
                     </div>
                 </div>
 
-                <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col gap-12 p-12 text-white">
+                <div className="w-11/12 lg:h-[600px] bg-gray-900 rounded-3xl flex flex-col gap-12 p-12 text-white">
                     <h2 className="w-full font-bold text-4xl text-center">Graduations</h2>
                     <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8">
                         <div className="w-full lg:w-2/6 flex flex-col items-center gap-4 p-4 rounded-xl bg-white dark:bg-gray-700 text-black dark:text-white">
@@ -106,7 +106,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col items-center gap-8 p-16 text-white">
+                <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col items-center gap-8 p-8 lg:p-20 text-white">
                     <h2 className="w-full lg:w-2/6 font-bold text-4xl text-center">Professional experiences</h2>
                     <div className="w-full lg:w-2/3 rounded-xl bg-gray-700 flex flex-col p-6 transition-transform hover:translate-x-2">
                         <h2 className="w-full lg:w-2/6 font-bold text-xl">Chief of caisse</h2>
@@ -143,7 +143,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col gap-8 p-12 text-white">
+                <div className="w-11/12 lg:h-[650px] bg-gray-900 rounded-3xl flex flex-col gap-8 p-12 text-white">
                     <h2 className="font-bold text-center w-full text-3xl">My bests projects</h2>
                     <div className="w-full flex flex-col lg:flex-row justify-center gap-16 p-4">
                         {projets.map((e: any, index: any) => <Projet imagePath={e.chemin} titre={e.titre} techs={e.techs} description={e.description} lien={e.link} key={index} />)}
