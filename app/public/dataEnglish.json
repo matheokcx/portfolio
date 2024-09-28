@@ -119,6 +119,18 @@
             "progress": "90"
         },
         {
+            "type": "framework",
+            "chemin": "/tailwindcss.png",
+            "titre": "TailwindCss",
+            "progress": "90"
+        },
+        {
+            "type": "framework",
+            "chemin": "/bulma.png",
+            "titre": "Bulma",
+            "progress": "50"
+        },
+        {
             "type": "logiciel",
             "chemin": "/vscode.png",
             "titre": "Visual Studio Code",
