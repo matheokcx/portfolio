@@ -90,9 +90,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-11/12 lg:h-[600px] bg-gray-900 rounded-3xl flex flex-col gap-12 p-12 text-white">
-          <h2 className="w-full font-bold text-4xl text-center">Mes formations</h2>
+        <div className="w-11/12 lg:h-[600px] bg-gray-900 rounded-3xl flex flex-col justify-center gap-12 p-12 text-white">
           <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8">
+            <div className="w-full lg:w-2/6 flex flex-col gap-8">
+              <h2 className="text-5xl font-bold">Un parcours ambitieux</h2>
+              <p className="text-sm">Après un parcours des plus classiques, j'ai décidé de passer par un BUT informatique pour apprendre la pratique, mais mon objectif reste toujours le même : devenir ingénieur logiciel.</p>
+            </div>
             <div className="w-full lg:w-2/6 flex flex-col items-center gap-4 p-4 rounded-xl bg-white dark:bg-gray-700 text-black dark:text-white">
               <img src="/iut.png" alt="Iut de Lens" className="w-4/6 h-44" />
               <h2 className="text-xl font-bold">BUT Informatique</h2>
@@ -143,10 +146,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-11/12 lg:h-[650px] bg-gray-900 rounded-3xl flex flex-col gap-8 p-12 text-white">
-          <h2 className="font-bold text-center w-full text-3xl">Mes meilleurs projets</h2>
-          <div className="w-full flex flex-col lg:flex-row justify-center gap-16 p-4">
+        <div className="w-11/12 lg:h-[650px] bg-gray-900 rounded-3xl flex flex-col justify-center gap-8 p-12 text-white">
+          <div className="w-full flex flex-col-reverse lg:flex-row justify-center gap-16 p-4">
             {projets.map((e: any, index: any) => <Projet imagePath={e.chemin} titre={e.titre} techs={e.techs} description={e.description} lien={e.link} key={index} />)}
+            <div className="flex flex-col justify-center text-center lg:text-left gap-8">
+              <h2 className="text-4xl font-bold">L'apprentissage passe par des projets</h2>
+              <p>La pratique permet de mettre en action ce que l'on a appris</p>
+            </div>
           </div>
         </div>
 
