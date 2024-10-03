@@ -63,17 +63,25 @@ export default function Home() {
 
                 <img src="/francais.png" alt="Portfolio en anglais" width="60" height="60" onClick={() => router.push("/")} className="fixed top-4 right-4 hover:cursor-pointer" />
 
+                <div className="invisible lg:visible w-full lg:h-[90px] flex flex-col lg:flex-row overflow-y-auto justify-center items-center gap-4 lg:gap-8 font-bold pt-12 lg:pt-0">
+                    <a href="#1">About me</a>
+                    <a href="#2">Graduations</a>
+                    <img src="/react.png" alt="icon" className="w-24 h-16" />
+                    <a href="#3">Skills</a>
+                    <a href="#4">Projects</a>
+                </div>
+
                 <div className="w-11/12 flex flex-col-reverse lg:flex-row items-center p-8 lg:p-20 pt-36 gap-8">
                     <span className="w-full lg:w-3/5 flex flex-col gap-6 font-bold animate-slide_up">
                         <h3 className="text-5xl font-bold w-full lg:w-auto">“Each day is a chance to challenge himself.„</h3>
                         <p className="text-gray-400">- Deleplanque Mathéo</p>
                         <button className="w-1/2 lg:w-1/5 h-12 rounded-3xl text-white font-extrabold bg-gradient-to-br from-purple-700 to-blue-800 transition-transform hover:translate-x-2" ><a href="mailto:matheo.deleplanque@gmail.com" target="_blank">Contact</a></button>
                     </span>
-                    <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-2/5 h-96 animate-slide_up shadow-lg transition-transform hover:scale-102 hover:-translate-y-2" />
+                    <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-2/5 h-96 animate-slide_up shadow-lg transition-transform hover:scale-102 hover:-translate-y-2 hover:dark:shadow-xl hover:dark:shadow-purple-700" />
                 </div>
 
                 <div className="w-11/12  flex flex-col gap-20 mt-44">
-                    <div className="w-full lg:h-[600px] dark:bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8">
+                    <div className="w-full lg:h-[600px] dark:bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8" id="1">
                         <img src="/illustration2.svg" alt="illustration" className="w-full lg:w-2/3 h-80 rounded-xl" />
                         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-normal gap-8 lg:pl-8">
                             <h2 className="text-4xl font-bold text-center lg:text-left w-full lg:w-3/4">About me</h2>
@@ -90,7 +98,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="w-11/12 lg:h-[600px] bg-gray-900 rounded-3xl flex flex-col justify-center gap-12 p-12 text-white">
+                <div className="w-11/12 lg:h-[600px] bg-gray-900 rounded-3xl flex flex-col justify-center gap-12 p-12 text-white" id="2">
                     <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8">
                         <div className="w-full lg:w-2/6 flex flex-col gap-8">
                             <h2 className="text-5xl font-bold">An ambitious parcour</h2>
@@ -132,7 +140,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col items-center gap-12 p-8 text-white">
+                <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col items-center gap-12 p-8 text-white" id="3">
                     <h2 className="font-bold text-center text-4xl w-full">Skills</h2>
                     <div className="w-full flex flex-col lg:flex-row lg:flex-wrap items-center lg:items-normal justify-center gap-6">
                         {choixLogiciel ? competences.filter((e: any) => e.type === "logiciel").map((e: any, index: any) => <Competence imagePath={e.chemin} titre={e.titre} progression={e.progress} key={index} />) : null}
@@ -146,13 +154,13 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="w-11/12 lg:h-[650px] bg-gray-900 rounded-3xl flex flex-col-reverse lg:flex-row gap-8 p-12 text-white">
-                    <div className="w-full flex flex-col-reverse lg:flex-row justify-center gap-16 p-4">
+                <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col flex-2 items-center gap-12 p-12 text-white" id="4">
+                    <div className="w-full flex-col items-center text-center">
+                        <h2 className="text-4xl font-bold">The knwoledges come via projects</h2>
+                        <p>Practice is a chance to rate my skills in real situations !</p>
+                    </div>
+                    <div className="w-full flex flex-col lg:flex-row flex-wrap justify-center items-center gap-8">
                         {projets.map((e: any, index: any) => <Projet imagePath={e.chemin} titre={e.titre} techs={e.techs} description={e.description} lien={e.link} key={index} />)}
-                        <div className="flex flex-col justify-center text-center lg:text-left gap-8">
-                            <h2 className="text-4xl font-bold">L'apprentissage passe par des projets</h2>
-                            <p>La pratique permet de mettre en action ce que l'on a appris</p>
-                        </div>
                     </div>
                 </div>
 

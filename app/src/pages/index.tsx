@@ -17,6 +17,8 @@ export default function Home() {
   const [choixFramework, setChoixFramework] = useState<boolean>(false);
   const [choixLogiciel, setChoixLogiciel] = useState<boolean>(false);
 
+  let i: number = 0;
+
   const trouverDonnees = async () => {
     await fetch("/data.json").then((reponse: Response) => reponse.json()).then((data: any) => {
       setQualites(data.qualites);
@@ -60,19 +62,26 @@ export default function Home() {
       </Head>
 
       <div className="w-full flex flex-col items-center bg-white dark:bg-black text-black dark:text-white font-Fredoka bg-fixed gap-24">
-
         <img src="/english.png" alt="Portfolio en anglais" width="50" height="50" onClick={() => router.push("/english")} className="fixed top-5 right-5 hover:cursor-pointer" />
 
-        <div className="w-11/12 flex flex-col-reverse lg:flex-row items-center p-8 lg:p-20 pt-36 gap-8">
+        <div className="invisible lg:visible w-full lg:h-[90px] flex flex-col lg:flex-row overflow-y-auto justify-center items-center gap-4 lg:gap-8 font-bold pt-12 lg:pt-0">
+          <a href="#1">A propos</a>
+          <a href="#2">Formations</a>
+          <img src="/react.png" alt="icon" className="w-24 h-16" />
+          <a href="#3">Compétences</a>
+          <a href="#4">Projets</a>
+        </div>
+
+        <div className="w-11/12 flex flex-col-reverse lg:flex-row items-center p-8 lg:p-20 gap-8">
           <span className="w-full lg:w-3/5 flex flex-col gap-6 font-bold animate-slide_up">
             <h3 className="text-5xl font-bold w-full lg:w-auto">“Chaque jour est une nouvelle occasion de se dépasser.„</h3>
             <p className="text-gray-400">- Deleplanque Mathéo</p>
             <button className="w-1/2 lg:w-1/5 h-12 rounded-3xl text-white font-extrabold bg-gradient-to-br from-purple-700 to-blue-800 transition-transform hover:translate-x-2" ><a href="mailto:matheo.deleplanque@gmail.com" target="_blank">Contact</a></button>
           </span>
-          <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-2/5 h-96 animate-slide_up shadow-lg transition-transform hover:scale-102 hover:-translate-y-2" />
+          <img src="/illustration1.jpg" alt="Illustration 1" className="rounded-2xl w-full lg:w-2/5 h-96 animate-slide_up shadow-lg transition-transform hover:scale-102 hover:-translate-y-2 hover:dark:shadow-xl hover:dark:shadow-purple-700" />
         </div>
 
-        <div className="w-11/12   flex flex-col gap-20 mt-44">
+        <div className="w-11/12   flex flex-col gap-20 mt-44" id="1">
           <div className="w-full lg:h-[600px] dark:bg-gray-900 rounded-xl flex flex-col lg:flex-row items-center gap-8 p-8">
             <img src="/illustration2.svg" alt="illustration" className="w-full lg:w-2/3 h-80 rounded-xl" />
             <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-normal gap-8 lg:pl-8">
@@ -90,7 +99,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-11/12 lg:h-[600px] bg-gray-900 rounded-3xl flex flex-col justify-center gap-12 p-12 text-white">
+        <div className="w-11/12 lg:h-[600px] bg-gray-900 rounded-3xl flex flex-col justify-center gap-12 p-12 text-white" id="2">
           <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-8">
             <div className="w-full lg:w-2/6 flex flex-col gap-8">
               <h2 className="text-5xl font-bold">Un parcours ambitieux</h2>
@@ -132,7 +141,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col gap-12 p-8 text-white">
+        <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col gap-12 p-8 text-white" id="3">
           <h2 className="font-bold text-center text-4xl w-full">Mes compétences</h2>
           <div className="w-full flex flex-col lg:flex-row lg:flex-wrap items-center lg:items-normal justify-center gap-6">
             {choixLogiciel ? competences.filter((e: any) => e.type === "logiciel").map((e: any, index: any) => <Competence imagePath={e.chemin} titre={e.titre} progression={e.progress} key={index} />) : null}
@@ -146,13 +155,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-11/12 lg:h-[650px] bg-gray-900 rounded-3xl flex flex-col justify-center gap-8 p-12 text-white">
-          <div className="w-full flex flex-col-reverse lg:flex-row justify-center gap-16 p-4">
+        <div className="w-11/12 bg-gray-900 rounded-3xl flex flex-col flex-2 items-center gap-12 p-12 text-white" id="4">
+          <div className="w-full flex-col items-center text-center">
+            <h2 className="text-4xl font-bold">L'apprentissage passe par des projets</h2>
+            <p>La pratique permet de mettre en action ce que l'on a appris</p>
+          </div>
+          <div className="w-full flex flex-col lg:flex-row flex-wrap justify-center items-center gap-8">
             {projets.map((e: any, index: any) => <Projet imagePath={e.chemin} titre={e.titre} techs={e.techs} description={e.description} lien={e.link} key={index} />)}
-            <div className="flex flex-col justify-center text-center lg:text-left gap-8">
-              <h2 className="text-4xl font-bold">L'apprentissage passe par des projets</h2>
-              <p>La pratique permet de mettre en action ce que l'on a appris</p>
-            </div>
           </div>
         </div>
 
@@ -161,7 +170,6 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/math%C3%A9o-deleplanque-4a4725329/" target="_blank"><img src="/linkedin.png" alt="GitHub" className="w-10 h-10 transition-transform hover:scale-105" /></a>
           <a href="mailto:matheo.deleplanque@gmail.com" target="_blank"><img src="/mail.png" alt="Mail" className="w-12 h-12 transition-transform hover:scale-105" /></a>
         </div>
-
       </div >
     </>
   )
