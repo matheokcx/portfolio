@@ -14,12 +14,17 @@ const config: Config = {
       },
       keyframes: {
         slide_up: {
-          '0%': { 'margin-top': '300px', 'opacity': '0' },
-          '100%': { 'margin-top': '0px', 'opacity': '100%' }
+          '0%': { 'margin-top': '400px', 'opacity': '0' },
+          '100%': { 'margin-top': '208px', 'opacity': '100%' }
+        },
+        fadeIn: {
+          '0%': { transform: 'translateY(80px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
         }
       },
       animation: {
-        slide_up: 'slide_up 2s ease-in'
+        slide_up: 'slide_up 2s ease-in',
+        fadeIn: 'fadeIn 2s ease-out forwards'
       }
     },
   },
