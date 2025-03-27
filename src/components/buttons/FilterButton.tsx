@@ -6,7 +6,7 @@ export default function FilterButton ({title, setFilter} : {title: string, setFi
     return (
         <>
             <button className="filter px-4 hover:cursor-pointer" onClick={() => setFilter(title)}>
-                <img src={`/icons/${title}.svg`} className="w-[28px]" />
+                <img src={`${import.meta.env.BASE_URL}icons/${title}.svg`} className="w-[28px]" />
                 {title}
             </button>
         </>

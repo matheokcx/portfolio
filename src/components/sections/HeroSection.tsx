@@ -8,7 +8,7 @@ export default function HeroSection () {
             Let's Work Together
         </a>
       </div>
-      <img src="/illustration.avif" alt="Illustration" className="w-10/12 lg:w-3/4 rounded-3xl" />
+      <img src={`${import.meta.env.BASE_URL}illustration.avif`} alt="Illustration" className="w-10/12 lg:w-3/4 rounded-3xl" />
     </section>
   );
 }

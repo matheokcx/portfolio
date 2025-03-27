@@ -1,7 +1,7 @@
 export default function StorySection() {
     return (
         <section className="w-full p-10 flex justify-around items-center" id="about">
-            <img src="/memoji.png" alt="Illustration" className="w-1/3" />
+            <img src={`${import.meta.env.BASE_URL}memoji.png`} alt="Illustration" className="w-1/3" />
             <div className="w-1/2">
                 <h2 className="text-4xl font-bold mb-4">📖 My Story</h2>
                 <hr className="w-1/3 border-2 mb-10"/>
