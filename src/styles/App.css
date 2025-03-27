@@ -1,0 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.filter {
+    width: fit-content;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: black;
+    border-radius: 12px;
+    background-color: white;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.52);
+    border-style: solid;
+}
