@@ -115,25 +115,25 @@ export const datas = {
     projects : [
         {
           title: "Subbwise",
-          image: "/projets/subbwise.png",
+          image: `${import.meta.env.BASE_URL}projets/subbwise.png`,
           link: "https://github.com/matheokcx/subb-wise",
           stack: ["TypeScript", "NextJS", "Supabase"],
         },
         {
           title: "LaTierra",
-          image: "/projets/latierra.png",
+          image: `${import.meta.env.BASE_URL}projets/latierra.png`,
           link: "https://github.com/matheokcx/marathon-web.git",
           stack: ["Laravel", "Vite"],
         },
         {
           title: "Chatting App",
-          image: "/projets/chattingapp.png",
+          image: `${import.meta.env.BASE_URL}projets/chattingapp.png`,
           link: "https://github.com/matheokcx/chatting_app",
           stack: ["JavaScript", "ReactJS"],
         },
         {
           title: "Just Prime",
-          image: "/projets/justprime.jpg",
+          image: `${import.meta.env.BASE_URL}projets/justprime.jpg`,
           link: "https://github.com/matheokcx/just-prime",
           stack: ["Flask", "Python"],
         },
