@@ -5,21 +5,25 @@ import SkillsSection from './components/sections/SkillsSection'
 import Footer from './components/layout/Footer'
 import ProjectsSection from './components/sections/ProjectsSection'
 import StorySection from './components/sections/StorySection'
-import ProcessSection from './components/sections/ProcessSection'
+import Cursor from './components/Cursor'
+import { useState } from 'react'
 
 // ==============================================
 
 
 export default function App() {
+  const [activeSection, setActiveSection] = useState("home");
+
   return (
-    <div className="w-screen bg-radial-[at_50%_75%] from-indigo-800 to-black text-white flex flex-col items-center gap-20">
-        <Header />
-        <HeroSection />
-        <StorySection/>
-        <SkillsSection />
-        <ProcessSection/>
-        <ProjectsSection />
-        <Footer /> 
+    <div className="w-screen bg-radial-[at_60%_45%] from-blue-800 to-black text-white flex flex-col items-center gap-20">
+      <Header activeSection={activeSection} />
+      <HeroSection setActiveSection={setActiveSection} />
+      <StorySection setActiveSection={setActiveSection} />
+      <SkillsSection setActiveSection={setActiveSection} />
+      <ProjectsSection setActiveSection={setActiveSection} />
+      <Footer />
+
+      <Cursor />
     </div>
   );
 }

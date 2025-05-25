@@ -1,141 +1,50 @@
 export const datas = {
-    qualities : [],
-    skills : [
-        { 
-          image: `${import.meta.env.BASE_URL}competences/languages/typescript.png`, 
-          name: "TypeScript",
-          type: "language"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/languages/python.png`, 
-          name: "Python",
-          type: "language"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/languages/postgresql.png`, 
-          name: "SQL",
-          type: "language"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/languages/php.png`, 
-          name: "PHP",
-          type: "language"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/languages/html.png`, 
-          name: "HTML",
-          type: "language"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/languages/css.png`, 
-          name: "CSS",
-          type: "language"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/languages/java.png`, 
-          name: "Java",
-          type: "language"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/tools/vscode.png`, 
-          name: "Visual Studio Code",
-          type: "tool"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/tools/docker.png`, 
-          name: "Docker",
-          type: "tool"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/tools/figma.png`, 
-          name: "Figma",
-          type: "tool"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/tools/git.png`, 
-          name: "Git",
-          type: "tool"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/tools/jetbrain.png`, 
-          name: "JetBrain's IDE",
-          type: "tool"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/tools/postgresql.png`, 
-          name: "PostgreSQL",
-          type: "tool"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/tools/prisma.png`, 
-          name: "Prisma",
-          type: "tool"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/tools/postman.png`, 
-          name: "Postman",
-          type: "tool"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/frameworks/nextjs.png`, 
-          name: "NextJS",
-          type: "framework"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/frameworks/tailwind.png`, 
-          name: "TailwindCSS",
-          type: "framework"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/frameworks/laravel.png`, 
-          name: "Laravel",
-          type: "framework"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/frameworks/flask.png`, 
-          name: "Flask",
-          type: "framework"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/frameworks/symfony.png`, 
-          name: "Symfony",
-          type: "framework"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/librairies/redux.svg`, 
-          name: "Redux",
-          type: "librairy"
-        },
-        { 
-          image: `${import.meta.env.BASE_URL}competences/librairies/react.png`, 
-          name: "ReactJS",
-          type: "librairy"
-        }
-    ],
-    projects : [
-        {
-          title: "Subbwise",
-          image: `${import.meta.env.BASE_URL}projets/subbwise.png`,
-          link: "https://github.com/matheokcx/subb-wise",
-          stack: ["TypeScript", "NextJS", "Supabase"],
-        },
-        {
-          title: "LaTierra",
-          image: `${import.meta.env.BASE_URL}projets/latierra.png`,
-          link: "https://github.com/matheokcx/marathon-web.git",
-          stack: ["Laravel", "Vite"],
-        },
-        {
-          title: "Chatting App",
-          image: `${import.meta.env.BASE_URL}projets/chattingapp.png`,
-          link: "https://github.com/matheokcx/chatting_app",
-          stack: ["JavaScript", "ReactJS"],
-        },
-        {
-          title: "Just Prime",
-          image: `${import.meta.env.BASE_URL}projets/justprime.jpg`,
-          link: "https://github.com/matheokcx/just-prime",
-          stack: ["Flask", "Python"],
-        },
-    ]
+  skills: [
+    { name: 'Angular', icon: `${import.meta.env.BASE_URL}competences/frameworks/angular.svg`, category: 'frameworks' },
+    { name: 'Flask', icon: `${import.meta.env.BASE_URL}competences/frameworks/flask.svg`, category: 'frameworks' },
+    { name: 'Laravel', icon: `${import.meta.env.BASE_URL}competences/frameworks/laravel.svg`, category: 'frameworks' },
+    { name: 'NextJS', icon: `${import.meta.env.BASE_URL}competences/frameworks/nextdotjs.svg`, category: 'frameworks' },
+    { name: 'Symfony', icon: `${import.meta.env.BASE_URL}competences/frameworks/symfony.svg`, category: 'frameworks' },
+    { name: 'TailwindCSS', icon: `${import.meta.env.BASE_URL}competences/frameworks/tailwindcss.svg`, category: 'frameworks' },
+    { name: 'CSS', icon: `${import.meta.env.BASE_URL}competences/languages/css.svg`, category: 'languages' },
+    { name: 'HTML', icon: `${import.meta.env.BASE_URL}competences/languages/html5.svg`, category: 'languages' },
+    { name: 'PHP', icon: `${import.meta.env.BASE_URL}competences/languages/php.svg`, category: 'languages' },
+    { name: 'Python', icon: `${import.meta.env.BASE_URL}competences/languages/python.svg`, category: 'languages' },
+    { name: 'TypeScript', icon: `${import.meta.env.BASE_URL}competences/languages/typescript.svg`, category: 'languages' },
+    { name: 'Reactjs', icon: `${import.meta.env.BASE_URL}competences/librairies/react.svg`, category: 'libraries' },
+    { name: 'Redux', icon: `${import.meta.env.BASE_URL}competences/librairies/redux.svg`, category: 'libraries' },
+    { name: 'Docker', icon: `${import.meta.env.BASE_URL}competences/tools/docker.svg`, category: 'tools' },
+    { name: 'Figma', icon: `${import.meta.env.BASE_URL}competences/tools/figma.svg`, category: 'tools' },
+    { name: 'Git', icon: `${import.meta.env.BASE_URL}competences/tools/git.svg`, category: 'tools' },
+    { name: 'Jetbrains', icon: `${import.meta.env.BASE_URL}competences/tools/jetbrains.svg`, category: 'tools' },
+    { name: 'PostgreSQL', icon: `${import.meta.env.BASE_URL}competences/tools/postgresql.svg`, category: 'tools' },
+    { name: 'Postman', icon: `${import.meta.env.BASE_URL}competences/tools/postman.svg`, category: 'tools' },
+    { name: 'Prisma', icon: `${import.meta.env.BASE_URL}competences/tools/prisma.svg`, category: 'tools' },
+  ],
+  projects: [
+    {
+      title: "Fit-track",
+      image: `${import.meta.env.BASE_URL}projets/fitTrack.webp`,
+      link: "https://github.com/matheokcx/fit-track",
+      stack: ["Ionic", "Angular", "TypeScript"],
+    },
+    {
+      title: "LaTierra",
+      image: `${import.meta.env.BASE_URL}projets/latierra.png`,
+      link: "https://github.com/matheokcx/marathon-web.git",
+      stack: ["Laravel", "Vite"],
+    },
+    {
+      title: "Chatting App",
+      image: `${import.meta.env.BASE_URL}projets/chattingapp.png`,
+      link: "https://github.com/matheokcx/chatting_app",
+      stack: ["JavaScript", "ReactJS"],
+    },
+    {
+      title: "Just Prime",
+      image: `${import.meta.env.BASE_URL}projets/justprime.jpg`,
+      link: "https://github.com/matheokcx/just-prime",
+      stack: ["Flask", "Python", "Sqlite"],
+    },
+  ]
 }

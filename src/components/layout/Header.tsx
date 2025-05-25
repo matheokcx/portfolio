@@ -1,20 +1,29 @@
-export default function Header () {
+import { Send } from "lucide-react";
+
+// ==============================================
+
+
+export default function Header({ activeSection }: { activeSection: string }) {
+  const sections = [{ id: "home", translate: "Accueil" }, { id: "about", translate: "Mon histoire" }, { id: "skills", translate: "Compétences" }, { id: "projects", translate: "Projets" }];
+
+
   return (
-    <header className="w-screen flex justify-between items-center p-10">
+    <header className="w-screen hidden lg:flex lg:sticky lg:top-0 lg:backdrop-blur-xs justify-between items-center p-6">
       <div className="flex gap-32">
         <a href="index.html" className="text-2xl font-extrabold">
-          Mathéo D.
+          Mathéo | MD
         </a>
       </div>
-      <nav className="hidden lg:flex items-center gap-20">
-        <a href="#about" className="text-md font-semibold">My story</a>
-        <a href="#skills" className="text-md font-semibold">Skills</a>
-        <a href="#projets" className="text-md font-semibold">Projects</a>
-        <button className="w-fit px-4 h-12 rounded-full font-bold bg-gradient-to-br from-[#3C1AFB] to-[#311F71]">
-          <a href="mailto:matheo.deleplanque@gmail.com?subject=Contact par portfolio">Contact</a>
+      <nav className="hidden lg:flex items-center gap-16">
+        {
+          sections.map((section: any, index: number) => <a key={index} href={`#${section.id}`} className={`${activeSection === section.id ? "opacity-100" : ""} text-md opacity-60 font-semibold`}>{section.translate}</a>)
+        }
+        <button className="px-4 h-12 rounded-2xl font-bold bg-white transition-transform opacity-50 duration-1000 hover:opacity-100 hover:cursor-pointer">
+          <a href="mailto:matheo.deleplanque@gmail.com?subject=Contact par portfolio" className="w-full">
+            <Send className="text-black w-6 h-6" />
+          </a>
         </button>
       </nav>
     </header>
   );
 }
-  

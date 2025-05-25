@@ -1,24 +1,30 @@
-export default function StorySection() {
+import { Dispatch } from "react";
+import { useInView } from "react-intersection-observer";
+
+// ==============================================
+
+
+export default function StorySection({ setActiveSection }: { setActiveSection: Dispatch<React.SetStateAction<string>> }) {
+    const { ref, inView } = useInView({
+        threshold: 0.6,
+    });
+
+    if (inView) setActiveSection("about");
+
     return (
-        <section className="w-full p-10 flex justify-around items-center" id="about">
-            <img src={`${import.meta.env.BASE_URL}memoji.png`} alt="Illustration" className="w-1/3" />
-            <div className="w-1/2">
-                <h2 className="text-4xl font-bold mb-4">📖 My Story</h2>
-                <hr className="w-1/3 border-2 mb-10"/>
+        <section ref={ref} className="w-full p-10 flex flex-col lg:flex-row justify-around items-center gap-20 lg:gap-0" id="about">
+            <img src={`${import.meta.env.BASE_URL}memoji.png`} alt="Illustration" className="w-10/12 lg:w-1/3" />
+            <div className="w-11/12 lg:w-1/2 lg:text-left">
+                <h2 className="text-4xl font-bold mb-4">📖 Mon histoire</h2>
+                <hr className="w-1/3 border-2 mb-10" />
                 <p className="text-lg leading-relaxed">
-                    Coding didn’t just catch my interest—it completely transformed the way I approach problem-solving and innovation. 
-                    What started as simple curiosity quickly became a passion for crafting seamless user experiences and high-performance web applications.  
+                    Le développement ne s'est pas contenté d'attirer mon attention, il a totalement transformé ma manière d'aborder la résolution de problèmes et l'innovation.
+                    Ce qui n'était au départ qu'une simple curiosité est rapidement devenu une passion pour la création d'applications fluides et performantes.
                     <br /><br />
-                    I develop high-performance digital solutions using cutting-edge technologies like 
-                    <span className="font-semibold"> Next.js</span>,  
-                    <span className="font-semibold"> TypeScript</span>, and  
-                    <span className="font-semibold"> PostgreSQL</span>,  
-                    constantly pushing for efficiency and innovation. Every day, I turn complex challenges into fluid, high-performing digital experiences—because great code should feel effortless.
-                    <br /><br />
-                    I don’t just write code—I build digital experiences that create real impact and help businesses scale.  
-                    Whether it’s designing frictionless user journeys or solving deep technical challenges,  
-                    I thrive on turning <u>ideas into reality</u>.  
-                    Each project is an opportunity to refine my skills, push my limits, and deliver outstanding digital experiences.
+                    Je ne me contente pas d'écrire du code, je construis des solutions qui ont un réel impact et aident les entreprises à évoluer.
+                    Qu'il s'agisse de concevoir des designs de page web ou de résoudre des défis techniques complexes,
+                    je m'épanouis en transformant les idées en <u>réalité</u>.
+                    Chaque projet est une opportunité d'affiner mes compétences, de repousser mes limites et de livrer des expériences exceptionnelles.
                 </p>
             </div>
         </section>

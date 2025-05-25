@@ -1,9 +1,8 @@
-export default function SkillCard ({ image, name }: { image: string, name: string }) {
-  return (
-    <article className="w-8/12 lg:w-1/6 bg-white rounded-2xl shadow-md py-2">
-      <img src={image} alt={name} className="w-full h-3/4 rounded-3xl" />
-      <h3 className="text-xl text-center text-black font-semibold">{name}</h3>
-    </article>
-  );
+export default function SkillCard({ icon, name }: { icon: any, name: string }) {
+    return (
+        <div className="w-5/6 lg:w-1/6 bg-white rounded-xl p-4 flex justify-around items-center gap-2">
+            <img src={icon} alt={name} className="w-12 h-12" />
+            <h3 className="text-black text-lg font-semibold font-semibold">{name}</h3>
+        </div>
+    );
 }
-  
