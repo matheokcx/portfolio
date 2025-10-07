@@ -1,3 +1,16 @@
+:root {
+    --background-dark: hsl(0, 0%, 90%);
+    --background: hsl(0, 0%, 95%);
+    --background-light: hsl(0, 0%, 100%);
+
+    --border-color: --background-dark;
+
+    --main-text: hsl(0, 0%, 0%);
+    --secondary-text: hsl(0, 0%, 10%);
+
+    --primary: hsl(220, 100%, 70%);
+}
+
 html {
     scroll-behavior: smooth;
 }

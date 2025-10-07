@@ -17,7 +17,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         {project.title}
       </h3>
       <div className="flex flex-wrap justify-center gap-2">
-        {project.stack.map((name: string) => <ToolTag text={name} />)}
+        {project.stack.map((name: string) => <ToolTag key={name} text={name} />)}
       </div>
       <a href={project.link} target="_blank" className="w-full flex justify-end mt-6" ><Link className="text-black text-right" /></a>
     </article>

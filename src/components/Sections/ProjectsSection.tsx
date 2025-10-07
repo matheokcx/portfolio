@@ -1,4 +1,4 @@
-import ProjectCard from "../cards/ProjectCard";
+import ProjectCard from "../Cards/ProjectCard";
 import { DataType, getDatas } from "../../services/getDatas.ts";
 import { useInView } from "react-intersection-observer";
 import { Project } from "../../types";
@@ -22,8 +22,8 @@ const ProjectsSection = ({ setActiveSection }: ProjectsSectionProps) => {
         <section ref={ref} className="w-full mb-12 p-10 lg:p-20 pb-40 grid gap-20" id="projects">
             <h2 className="text-3xl text-center font-bold">📚 Projets</h2>
             <div className="w-full flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-16">
-                {datas.projects.map((project: Project, index: number) => (
-                    <ProjectCard key={index} project={project} />
+                {datas.projects.map((project: Project) => (
+                    <ProjectCard key={project.title} project={project} />
                 ))}
             </div>
         </section>

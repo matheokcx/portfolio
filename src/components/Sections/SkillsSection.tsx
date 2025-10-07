@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { DataType, getDatas } from "../../services/getDatas.ts";
-import SkillCard from "../cards/SkillCard";
+import SkillCard from "../Cards/SkillCard";
 import { useState } from "react";
 import { Codesandbox, FileCode2, PencilRuler, SquareLibrary } from "lucide-react";
 import { Skill } from "../../types";
