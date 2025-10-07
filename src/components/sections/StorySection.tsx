@@ -1,10 +1,13 @@
-import { Dispatch } from "react";
 import { useInView } from "react-intersection-observer";
 
 // ==============================================
 
 
-export default function StorySection({ setActiveSection }: { setActiveSection: Dispatch<React.SetStateAction<string>> }) {
+type StorySectionProps = {
+    setActiveSection: (newValue: string) => void
+};
+
+const StorySection = ({ setActiveSection }: StorySectionProps) => {
     const { ref, inView } = useInView({
         threshold: 0.6,
     });
@@ -30,3 +33,5 @@ export default function StorySection({ setActiveSection }: { setActiveSection: D
         </section>
     );
 }
+
+export default StorySection;

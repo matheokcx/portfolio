@@ -1,6 +1,9 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 
-export default function Footer() {
+// ==============================================
+
+
+const Footer = () => {
   return (
     <footer className="w-full bg-black flex flex-col lg:flex-row justify-around gap-10 lg:gap-0 px-10 lg:px-0 py-6" id="contacts" >
       <div className="flex flex-col gap-4">
@@ -22,4 +25,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

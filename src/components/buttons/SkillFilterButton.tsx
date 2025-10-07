@@ -1,8 +1,9 @@
-import { Dispatch, SetStateAction } from "react";
+type SkillFilterButtonProps = {
+    title: string,
+    setFilter: (newValue: string) => void
+};
 
-// ==============================================
-
-export default function SkillFilterButton({ title, setFilter }: { title: string, setFilter: Dispatch<SetStateAction<string>> }) {
+const SkillFilterButton = ({ title, setFilter }: SkillFilterButtonProps) => {
     return (
         <>
             <button className="filter px-4 hover:cursor-pointer" onClick={() => setFilter(title)}>
@@ -10,5 +11,7 @@ export default function SkillFilterButton({ title, setFilter }: { title: string,
                 {title}
             </button>
         </>
-    )
-}
+    );
+};
+
+export default SkillFilterButton;

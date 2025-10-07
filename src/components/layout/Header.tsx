@@ -3,8 +3,22 @@ import { Send } from "lucide-react";
 // ==============================================
 
 
-export default function Header({ activeSection }: { activeSection: string }) {
-  const sections = [{ id: "home", translate: "Accueil" }, { id: "about", translate: "Mon histoire" }, { id: "skills", translate: "Compétences" }, { id: "projects", translate: "Projets" }];
+type HeaderProps = {
+    activeSection: string
+};
+
+type Section = {
+    id: string,
+    translate: string
+};
+
+const Header = ({ activeSection }: HeaderProps) => {
+  const sections: Section[] = [
+      { id: "home", translate: "Accueil" },
+      { id: "about", translate: "Mon histoire" },
+      { id: "skills", translate: "Compétences" },
+      { id: "projects", translate: "Projets" }
+  ];
 
 
   return (
@@ -16,7 +30,7 @@ export default function Header({ activeSection }: { activeSection: string }) {
       </div>
       <nav className="hidden lg:flex items-center gap-16">
         {
-          sections.map((section: any, index: number) => <a key={index} href={`#${section.id}`} className={`${activeSection === section.id ? "opacity-100" : ""} text-md opacity-60 font-semibold`}>{section.translate}</a>)
+          sections.map((section: Section, index: number) => <a key={index} href={`#${section.id}`} className={`${activeSection === section.id ? "opacity-100" : ""} text-md opacity-60 font-semibold`}>{section.translate}</a>)
         }
         <button className="px-4 h-12 rounded-2xl font-bold bg-white transition-transform opacity-50 duration-1000 hover:opacity-100 hover:cursor-pointer">
           <a href="mailto:matheo.deleplanque@gmail.com?subject=Contact par portfolio" className="w-full">
@@ -26,4 +40,6 @@ export default function Header({ activeSection }: { activeSection: string }) {
       </nav>
     </header>
   );
-}
+};
+
+export default Header;

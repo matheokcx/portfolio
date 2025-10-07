@@ -1,15 +1,20 @@
 import ProjectCard from "../cards/ProjectCard";
-import { datas } from "../../utils/datas.ts";
-import { Dispatch } from "react";
+import { DataType, getDatas } from "../../services/getDatas.ts";
 import { useInView } from "react-intersection-observer";
+import { Project } from "../../types";
 
 // ==============================================
 
 
-export default function ProjectsSection({ setActiveSection }: { setActiveSection: Dispatch<React.SetStateAction<string>> }) {
+type ProjectsSectionProps = {
+    setActiveSection: (newValue: string) => void
+};
+
+const ProjectsSection = ({ setActiveSection }: ProjectsSectionProps) => {
     const { ref, inView } = useInView({
         threshold: 0.6,
     });
+    const datas: DataType = getDatas();
 
     if (inView) setActiveSection("projects");
 
@@ -17,10 +22,12 @@ export default function ProjectsSection({ setActiveSection }: { setActiveSection
         <section ref={ref} className="w-full mb-12 p-10 lg:p-20 pb-40 grid gap-20" id="projects">
             <h2 className="text-3xl text-center font-bold">📚 Projets</h2>
             <div className="w-full flex flex-col lg:flex-row lg:flex-wrap justify-center items-center gap-16">
-                {datas.projects.map((project, index) => (
+                {datas.projects.map((project: Project, index: number) => (
                     <ProjectCard key={index} project={project} />
                 ))}
             </div>
         </section>
     );
-}
+};
+
+export default ProjectsSection;

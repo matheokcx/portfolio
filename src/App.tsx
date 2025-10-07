@@ -11,8 +11,8 @@ import { useState } from 'react'
 // ==============================================
 
 
-export default function App() {
-  const [activeSection, setActiveSection] = useState("home");
+const App = () => {
+  const [activeSection, setActiveSection] = useState<string>("home");
 
   return (
     <div className="w-screen bg-radial-[at_60%_45%] from-blue-800 to-black text-white flex flex-col items-center gap-20">
@@ -26,4 +26,6 @@ export default function App() {
       <Cursor />
     </div>
   );
-}
+};
+
+export default App;
