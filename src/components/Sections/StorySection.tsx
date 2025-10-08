@@ -18,7 +18,7 @@ const StorySection = ({ setActiveSection }: StorySectionProps) => {
         <section ref={ref} className="w-full p-10 flex flex-col lg:flex-row justify-around items-center gap-20 lg:gap-0" id="about">
             <img src={`${import.meta.env.BASE_URL}memoji.png`} alt="Illustration" className="w-10/12 lg:w-1/3" />
             <div className="w-11/12 lg:w-1/2 lg:text-left">
-                <h2 className="text-4xl font-bold mb-4">📖 Mon histoire</h2>
+                <h2 className="text-4xl font-bold mb-4">Mon histoire</h2>
                 <hr className="w-1/3 border-2 mb-10" />
                 <p className="text-lg leading-relaxed">
                     Le développement ne s'est pas contenté d'attirer mon attention, il a totalement transformé ma manière d'aborder la résolution de problèmes et l'innovation.

@@ -1,0 +1,15 @@
+.skillCard {
+    width: 15%;
+    background: var(--background-light);
+
+    border-radius: 12px;
+    border-color: var(--background);
+    border-width: 2px;
+    border-style: solid;
+
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+}

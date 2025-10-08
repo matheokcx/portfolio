@@ -15,7 +15,7 @@ const App = () => {
   const [activeSection, setActiveSection] = useState<string>("home");
 
   return (
-    <div className="w-screen bg-radial-[at_60%_45%] from-blue-800 to-black text-white flex flex-col items-center gap-20">
+    <>
       <Header activeSection={activeSection} />
       <HeroSection setActiveSection={setActiveSection} />
       <StorySection setActiveSection={setActiveSection} />
@@ -24,7 +24,7 @@ const App = () => {
       <Footer />
 
       <Cursor />
-    </div>
+    </>
   );
 };
 

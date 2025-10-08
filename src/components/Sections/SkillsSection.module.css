@@ -1,0 +1,19 @@
+button {
+    width: fit-content;
+
+    padding-inline: 10px;
+    padding-block: 8px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 10px;
+    border-width: 2px;
+    border: var(--border-color);
+}
+
+button:hover {
+    cursor: pointer;
+}

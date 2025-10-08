@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import "./Footer.module.css";
 
 // ==============================================
 

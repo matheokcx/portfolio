@@ -1,3 +1,8 @@
+import styles from "./SkillCard.module.css"
+
+// ==============================================
+
+
 type SkillCardProps = {
     icon: any,
     name: string
@@ -5,7 +10,7 @@ type SkillCardProps = {
 
 const SkillCard = ({ icon, name }: SkillCardProps) => {
     return (
-        <div className="w-5/6 lg:w-1/6 bg-white rounded-xl p-4 flex justify-around items-center gap-2">
+        <div className={styles.skillCard}>
             <img src={icon} alt={name} className="w-12 h-12" />
             <h3 className="text-black text-lg font-semibold font-semibold">{name}</h3>
         </div>

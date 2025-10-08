@@ -11,6 +11,17 @@
     --primary: hsl(220, 100%, 70%);
 }
 
+body {
+    width: 100vw;
+
+    background: var(--background-dark);
+    color: var(--secondary-text);
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 html {
     scroll-behavior: smooth;
 }
