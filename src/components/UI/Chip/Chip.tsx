@@ -7,9 +7,9 @@ type ChipProps = {
     icon?: JSX.Element;
 };
 
-const Chip = ({ text, color, icon }: ChipProps) => {
+const Chip = ({text, color, icon}: ChipProps) => {
     return (
-        <div className={styles.chip} style={{ borderColor: color ?? "hsla(0, 0%, 20%, 40%)" }}>
+        <div className={styles.chip} style={{borderColor: color ?? "hsla(0, 0%, 20%, 40%)"}}>
             {icon && icon}
             <p>{text}</p>
         </div>

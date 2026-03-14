@@ -10,7 +10,7 @@ const ProjectsSection = () => {
         <section className={styles.projectsSection}>
             <h2></h2>
             <div>
-                {projects.map((project: Project) => <ProjectCard key={project.name} project={project} />)}
+                {projects.map((project: Project) => <ProjectCard key={project.name} project={project}/>)}
             </div>
         </section>
     );

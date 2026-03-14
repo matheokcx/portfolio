@@ -5,7 +5,7 @@ type ExperienceCardProps = {
     experience: Experience;
 };
 
-const ExperienceCard = ({ experience }: ExperienceCardProps) => {
+const ExperienceCard = ({experience}: ExperienceCardProps) => {
     return (
         <div className={styles.experienceCard}>
             <h3>{experience.job}</h3>

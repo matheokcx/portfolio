@@ -6,15 +6,15 @@ import ProjectsSection from "./components/Layout/ProjectsSection/ProjectsSection
 import ExperiencesSection from "./components/Layout/ExperiencesSection/ExperiencesSection.tsx";
 
 const App = () => {
-  return (
-    <>
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ExperiencesSection />
-    </>
-  );
+    return (
+        <>
+            <HeroSection/>
+            <AboutSection/>
+            <SkillsSection/>
+            <ProjectsSection/>
+            <ExperiencesSection/>
+        </>
+    );
 };
 
 export default App;

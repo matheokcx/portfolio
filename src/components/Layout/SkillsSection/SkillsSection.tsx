@@ -10,7 +10,7 @@ const SkillsSection = () => {
         <section className={styles.skillsSection}>
             <h2></h2>
             <div className={styles.skills}>
-                {skills.map((skill: Skill) => <SkillCard key={skill.name} skill={skill} />)}
+                {skills.map((skill: Skill) => <SkillCard key={skill.name} skill={skill}/>)}
             </div>
         </section>
     );
