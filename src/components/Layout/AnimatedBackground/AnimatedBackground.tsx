@@ -1,6 +1,7 @@
 import {Canvas} from '@react-three/fiber'
 import FloatingObject from "./FloatingObject/FloatingObject.tsx";
 import AnimatedLight from "./AnimatedLight/AnimatedLight.tsx";
+import StarField from "./StarField/StarField.tsx";
 import styles from "./animated-background.module.css";
 
 const AnimatedBackground = () => {
@@ -8,7 +9,7 @@ const AnimatedBackground = () => {
 
     return (
         <div className={styles.animatedBackground}>
-            <Canvas camera={{position: [0, 0, 4], fov: 45}}
+            <Canvas camera={{position: [0, 0, 5], fov: 45}}
                     gl={{
                         antialias: true,
                         alpha: true,
@@ -19,8 +20,10 @@ const AnimatedBackground = () => {
                     }}
                     frameloop={prefersReduced ? 'never' : 'always'}
             >
+                <fog attach="fog" args={['#0a0a0a', 5, 18]}/>
                 <AnimatedLight/>
                 <FloatingObject/>
+                <StarField/>
             </Canvas>
         </div>
     );
