@@ -1,3 +1,5 @@
 .experienceCard {
-
+    border: 2px solid hsla(0, 0%, 20%, 50%);
+    padding: 10px;
+    border-radius: 10px;
 }

@@ -11,9 +11,10 @@ const SkillCard = ({skill}: SkillCardProps) => {
             {skill.icon && (typeof skill.icon === "string" ? (
                 <img src={skill.icon}
                      alt={`${skill.name} icon`}
+                     className={styles.icon}
                 />
             ) : skill.icon)}
-            <p>{skill.name}</p>
+            <p style={{textAlign: "center", fontWeight: "600"}}>{skill.name}</p>
         </div>
     );
 };

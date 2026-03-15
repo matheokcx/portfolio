@@ -11,6 +11,7 @@ const ExperienceCard = ({experience}: ExperienceCardProps) => {
             <h3>{experience.job}</h3>
             <p>
                 <span>{experience.company}</span>
+                {" | "}
                 <span>
                     {experience.startDate.toISOString().split("T")[0]}
                     {" to "}

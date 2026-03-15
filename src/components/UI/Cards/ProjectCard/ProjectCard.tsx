@@ -10,18 +10,20 @@ const ProjectCard = ({project}: ProjectCardProps) => {
     return (
         <div className={styles.projectCard}>
             <img src={project.images[0]} alt={`${project.name} project`}/>
-            <h3>{project.name}</h3>
-            <p>{project.description.split("\n")[0]}</p>
-            <div className={styles.usedSkills}>
-                {project.tools.map((tool: Skill) => (
-                    <Chip key={tool.name}
-                          text={tool.name}
-                          icon={(tool.icon && typeof tool.icon !== "string") ? tool.icon : undefined}
-                          color={tool.color ?? undefined}
-                    />
-                ))}
+            <div style={{width: "100%"}}>
+                <h3>{project.name}</h3>
+                <p>{project.description.split("\n")[0]}</p>
+                <div className={styles.usedSkills}>
+                    {project.tools.map((tool: Skill) => (
+                        <Chip key={tool.name}
+                              text={tool.name}
+                              icon={(tool.icon && typeof tool.icon !== "string") ? tool.icon : undefined}
+                              color={tool.color ?? undefined}
+                        />
+                    ))}
+                </div>
+                <a href={project.link} target="_blank">Voir le projet</a>
             </div>
-            <a href={project.link} target="_blank"></a>
         </div>
     );
 };

@@ -1,3 +1,12 @@
 .skillCard {
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 
+.icon {
+    width: 20%;
 }

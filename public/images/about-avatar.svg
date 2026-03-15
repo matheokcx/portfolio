@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="195" fill="hsl(260, 10%, 15%)" stroke="hsl(260, 5%, 90%)" stroke-width="2"/>
+
+  <!-- Body / Shoulders -->
+  <path d="M100 360 C100 290 145 250 200 250 C255 250 300 290 300 360" fill="hsl(260, 8%, 25%)"/>
+
+  <!-- Neck -->
+  <rect x="178" y="230" width="44" height="30" rx="6" fill="hsl(28, 60%, 72%)"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="195" rx="65" ry="72" fill="hsl(28, 60%, 72%)"/>
+
+  <!-- Hair -->
+  <path d="M135 185 C135 140 160 115 200 110 C240 115 265 140 265 185 C265 160 250 135 200 130 C150 135 135 160 135 185Z" fill="hsl(25, 20%, 18%)"/>
+  <path d="M138 195 C133 170 140 148 158 133 C148 155 143 175 145 195Z" fill="hsl(25, 20%, 18%)"/>
+  <path d="M262 195 C267 170 260 148 242 133 C252 155 257 175 255 195Z" fill="hsl(25, 20%, 18%)"/>
+
+  <!-- Eyes -->
+  <ellipse cx="175" cy="195" rx="8" ry="9" fill="hsl(0, 0%, 15%)"/>
+  <ellipse cx="225" cy="195" rx="8" ry="9" fill="hsl(0, 0%, 15%)"/>
+  <circle cx="172" cy="192" r="3" fill="white" opacity="0.7"/>
+  <circle cx="222" cy="192" r="3" fill="white" opacity="0.7"/>
+
+  <!-- Eyebrows -->
+  <path d="M160 178 Q175 172 190 178" stroke="hsl(25, 20%, 18%)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M210 178 Q225 172 240 178" stroke="hsl(25, 20%, 18%)" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Nose -->
+  <path d="M197 205 Q200 215 203 205" stroke="hsl(28, 40%, 60%)" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Smile -->
+  <path d="M180 225 Q200 240 220 225" stroke="hsl(0, 0%, 15%)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- T-shirt collar -->
+  <path d="M172 258 L200 275 L228 258" stroke="hsl(260, 8%, 20%)" stroke-width="2" fill="none"/>
+
+  <!-- Laptop on lap hint -->
+  <rect x="145" y="330" width="110" height="6" rx="3" fill="hsl(260, 5%, 40%)"/>
+  <rect x="155" y="310" width="90" height="22" rx="2" fill="hsl(260, 10%, 30%)" stroke="hsl(260, 5%, 45%)" stroke-width="1"/>
+
+  <!-- Code on laptop screen -->
+  <line x1="162" y1="317" x2="182" y2="317" stroke="hsl(150, 60%, 50%)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="162" y1="322" x2="175" y2="322" stroke="hsl(260, 60%, 65%)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="178" y1="322" x2="195" y2="322" stroke="hsl(200, 60%, 55%)" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="162" y1="327" x2="188" y2="327" stroke="hsl(30, 60%, 60%)" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

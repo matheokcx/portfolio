@@ -8,8 +8,8 @@ const ProjectsSection = () => {
 
     return (
         <section className={styles.projectsSection}>
-            <h2></h2>
-            <div>
+            <h2 style={{textAlign: "center"}}>Mes super projets</h2>
+            <div className={styles.projects}>
                 {projects.map((project: Project) => <ProjectCard key={project.name} project={project}/>)}
             </div>
         </section>

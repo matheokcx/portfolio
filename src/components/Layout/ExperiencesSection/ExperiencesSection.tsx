@@ -8,7 +8,7 @@ const ExperiencesSection = () => {
 
     return (
         <section className={styles.experiencesSection}>
-            <h2></h2>
+            <h2>Mes expériences professionnelles</h2>
             <div className={styles.experiences}>
                 {experiences.map((experience: Experience) => (
                     <ExperienceCard key={experience.job}

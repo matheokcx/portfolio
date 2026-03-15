@@ -1,7 +1,18 @@
 .aboutSection {
-
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-inline: 48px;
+    align-items: center;
+    background: var(--background-color);
 }
 
 .explanationDiv {
+    width: 40%;
+    display: grid;
+    gap: 10px;
+}
 
+.aboutSection img {
+    width: 30%;
 }
