@@ -16,6 +16,10 @@
     margin-top: 8px;
 }
 
+.contactCta a {
+    color: black;
+}
+
 .contactCta,
 .projectsCta {
     font-size: 15px;

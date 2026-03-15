@@ -16,8 +16,9 @@ const HeroSection = () => {
             </div>
 
             <div className={styles.ctas}>
-                <button className={styles.contactCta}>Me contacter</button>
-                <button className={styles.projectsCta}>Mes projets</button>
+                <button className={styles.contactCta}><a href="mailto:matheo.deleplanque@gmail.com">Me contacter</a>
+                </button>
+                <button className={styles.projectsCta}><a href="#projects">Mes projetss</a></button>
             </div>
         </section>
     );
