@@ -1,20 +1,22 @@
 import {useState} from "react";
+import {useTranslation} from "react-i18next";
 import styles from "./skills-section.module.css";
 import type {Skill, SkillCategory} from "../../../types";
 import {getSkills} from "../../../services/informationService.ts";
 import SkillCard from "../../UI/Cards/SkillCard/SkillsCard.tsx";
 
-const FILTERS: { label: string; value: SkillCategory | "all" }[] = [
-    {label: "Tous", value: "all"},
-    {label: "Langages", value: "language"},
-    {label: "Librairies", value: "library"},
-    {label: "Frameworks", value: "framework"},
-    {label: "Outils", value: "tool"},
-];
-
 const SkillsSection = () => {
+    const {t} = useTranslation();
     const skills: Skill[] = getSkills();
     const [activeFilter, setActiveFilter] = useState<SkillCategory | "all">("all");
+
+    const filters: { label: string; value: SkillCategory | "all" }[] = [
+        {label: t("skills.filterAll"), value: "all"},
+        {label: t("skills.filterLanguages"), value: "language"},
+        {label: t("skills.filterLibraries"), value: "library"},
+        {label: t("skills.filterFrameworks"), value: "framework"},
+        {label: t("skills.filterTools"), value: "tool"},
+    ];
 
     const filteredSkills = activeFilter === "all"
         ? skills
@@ -22,9 +24,9 @@ const SkillsSection = () => {
 
     return (
         <section className={styles.skillsSection}>
-            <h2>Mes competences</h2>
+            <h2>{t("skills.title")}</h2>
             <div className={styles.filters}>
-                {FILTERS.map((filter) => (
+                {filters.map((filter) => (
                     <button
                         key={filter.value}
                         className={`${styles.filterBtn} ${activeFilter === filter.value ? styles.filterBtnActive : ""}`}

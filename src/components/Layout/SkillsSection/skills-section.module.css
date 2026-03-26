@@ -23,7 +23,7 @@
 }
 
 .filterBtn:hover {
-    background: hsla(220, 40%, 25%, 0.2);
+    background: var(--hover-bg-subtle);
     color: var(--primary-text-color);
 }
 

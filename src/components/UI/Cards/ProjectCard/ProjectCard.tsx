@@ -1,3 +1,4 @@
+import {useTranslation} from "react-i18next";
 import type {Project, Skill} from "../../../../types";
 import styles from "./project-card.module.css";
 import Chip from "../../Chip/Chip.tsx";
@@ -7,6 +8,8 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({project}: ProjectCardProps) => {
+    const {t} = useTranslation();
+
     return (
         <div className={styles.projectCard}>
             <img src={project.images[0]} alt={`${project.name} project`}/>
@@ -22,7 +25,7 @@ const ProjectCard = ({project}: ProjectCardProps) => {
                     ))}
                 </div>
                 <a className={styles.link} href={project.link} target="_blank" rel="noopener noreferrer">
-                    Voir le projet →
+                    {t("projects.viewProject")}
                 </a>
             </div>
         </div>

@@ -1,22 +1,25 @@
+import {useTranslation} from "react-i18next";
 import styles from "./hero-section.module.css";
 
 const HeroSection = () => {
+    const {t} = useTranslation();
+
     return (
         <section className={styles.heroSection}>
             <h1 className={styles.title}>
-                Je conçois des applications web complètes,<br/>
-                prêtes à l'évolution.
+                {t("hero.title1")}<br/>
+                {t("hero.title2")}
             </h1>
             <p className={styles.description}>
-                Actuellement en recherche d'alternance pour un Bac+5 en gestion de projets informatiques.
+                {t("hero.description")}
             </p>
 
             <div className={styles.ctas}>
                 <button className={styles.contactCta}>
-                    <a href="mailto:matheo.deleplanque@gmail.com">Me contacter</a>
+                    <a href="mailto:matheo.deleplanque@gmail.com">{t("hero.contact")}</a>
                 </button>
                 <button className={styles.projectsCta}>
-                    <a href="#projects">Mes projets</a>
+                    <a href="#projects">{t("hero.projects")}</a>
                 </button>
             </div>
         </section>

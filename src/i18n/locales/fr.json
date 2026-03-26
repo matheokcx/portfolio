@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title1": "Je conçois des applications web complètes,",
+    "title2": "prêtes à l'évolution.",
+    "description": "Actuellement en recherche d'alternance pour un Bac+5 en gestion de projets informatiques.",
+    "contact": "Me contacter",
+    "projects": "Mes projets"
+  },
+  "about": {
+    "title": "À propos",
+    "paragraph1": "Développeur Fullstack passionné par la conception d'applications web avec une architecture solide, je travaille principalement avec les technologies React et Symfony pour construire des solutions fullstack, du front-end au back-end. Curieux et rigoureux, j'aime comprendre les besoins métier pour les traduire en fonctionnalités concrètes.",
+    "paragraph2": "Actuellement en Bac+3 en But informatique, je recherche une alternance en développement d'application pour un Bac+5. Mon objectif: combiner ma maîtrise technique avec les compétences en pilotage de projet de ma futur formation afin d'accompagner des équipes et m'investir dans des projets de A à Z."
+  },
+  "skills": {
+    "title": "Mes compétences",
+    "filterAll": "Tous",
+    "filterLanguages": "Langages",
+    "filterLibraries": "Librairies",
+    "filterFrameworks": "Frameworks",
+    "filterTools": "Outils"
+  },
+  "projects": {
+    "title": "Mes projets",
+    "viewProject": "Voir le projet →"
+  },
+  "experiences": {
+    "title": "Mes expériences professionnelles"
+  },
+  "footer": {
+    "role": "Développeur FullStack"
+  },
+  "data": {
+    "projects": {
+      "kraft": "Application web complète de gestion de clients et projets (CRM like).",
+      "rentacarlens": "Application client, serveur API et app mobile pour la location de véhicules.",
+      "fittrack": "Application mobile de suivi de séances de sport et de nutrition."
+    },
+    "experiences": {
+      "fullstack": "Alternance développeur FullStack",
+      "cashier": "Caissier restauration événementiel"
+    }
+  }
+}

@@ -6,6 +6,13 @@
   --primary-text-color: hsl(220, 20%, 95%);
   --border: hsla(220, 40%, 25%, 0.4);
   --accent-color: hsl(220, 80%, 60%);
+  --grid-line: hsla(220, 50%, 30%, 0.07);
+  --glow: hsla(220, 60%, 20%, 0.25);
+  --hover-bg: hsla(220, 30%, 15%, 0.8);
+  --hover-bg-subtle: hsla(220, 40%, 25%, 0.2);
+  --cta-shadow: rgba(255, 255, 255, 0.15);
+  --cta-shadow-hover: rgba(255, 255, 255, 0.25);
+  --card-shadow: rgba(0, 0, 0, 0.3);
 
   color-scheme: dark;
   font-synthesis: none;
@@ -14,12 +21,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --dark-background-color: hsl(220, 20%, 96%);
+    --background-color: hsl(220, 20%, 92%);
+    --card-background-color: hsl(220, 20%, 98%);
+    --secondary-text-color: hsl(220, 10%, 40%);
+    --primary-text-color: hsl(225, 40%, 12%);
+    --border: hsla(220, 20%, 80%, 0.6);
+    --accent-color: hsl(220, 80%, 50%);
+    --grid-line: hsla(220, 30%, 70%, 0.12);
+    --glow: hsla(220, 60%, 70%, 0.15);
+    --hover-bg: hsla(220, 30%, 85%, 0.6);
+    --hover-bg-subtle: hsla(220, 30%, 80%, 0.3);
+    --cta-shadow: rgba(0, 0, 0, 0.1);
+    --cta-shadow-hover: rgba(0, 0, 0, 0.18);
+    --card-shadow: rgba(0, 0, 0, 0.08);
+
+    color-scheme: light;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   background:
-    radial-gradient(ellipse 80% 50% at 50% 0%, hsla(220, 60%, 20%, 0.25) 0%, transparent 60%),
-    linear-gradient(to right, hsla(220, 50%, 30%, 0.07) 1px, transparent 1px),
-    linear-gradient(to bottom, hsla(220, 50%, 30%, 0.07) 1px, transparent 1px),
+    radial-gradient(ellipse 80% 50% at 50% 0%, var(--glow) 0%, transparent 60%),
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px),
     var(--background-color);
   background-size: 100% 100%, 60px 60px, 60px 60px, 100% 100%;
   background-attachment: fixed;

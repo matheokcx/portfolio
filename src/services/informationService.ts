@@ -1,4 +1,5 @@
 import type {Experience, Project, Skill} from "../types";
+import type {TFunction} from "i18next";
 
 const DEVICON_BASE = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons";
 
@@ -146,11 +147,11 @@ export const getSkills = (): Skill[] => {
     ];
 };
 
-export const getProjects = (): Project[] => {
+export const getProjects = (t: TFunction): Project[] => {
     return [
         {
             name: "Kraft",
-            description: "Application web complète de gestion de clients et projets (CRM like).",
+            description: t("data.projects.kraft"),
             images: ["/projects/kraft/Logo.svg"],
             tools: [
                 {name: "Next.js", color: "#000000"},
@@ -161,7 +162,7 @@ export const getProjects = (): Project[] => {
         },
         {
             name: "RentaCarLens",
-            description: "Application client, serveur API et app mobile pour la location de véhicules.",
+            description: t("data.projects.rentacarlens"),
             images: ["/projects/renta-car-lens/Logo.png"],
             tools: [
                 {name: "Angular", color: "#DD0031"},
@@ -172,7 +173,7 @@ export const getProjects = (): Project[] => {
         },
         {
             name: "Fit-track",
-            description: "Application mobile de suivi de séances de sport et de nutrition.",
+            description: t("data.projects.fittrack"),
             images: ["/projects/fit-track/Logo.webp"],
             tools: [
                 {name: "Ionic", color: "#3880FF"},
@@ -182,19 +183,19 @@ export const getProjects = (): Project[] => {
     ];
 };
 
-export const getExperiences = (): Experience[] => {
+export const getExperiences = (t: TFunction): Experience[] => {
     return [
         {
-            job: "Alternance développeur FullStack",
+            job: t("data.experiences.fullstack"),
             startDate: new Date("2025-02-03"),
             endDate: new Date("2026-08-31"),
             company: "Primever Service"
         },
         {
-            job: "Caissier restauration événementiel",
+            job: t("data.experiences.cashier"),
             startDate: new Date("2025-08-03"),
             endDate: new Date("2025-12-14"),
-            company: "Agence intérim"
+            company: "Agence interim"
         }
     ];
 };

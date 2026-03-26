@@ -10,7 +10,7 @@
 }
 
 .skillCard:hover {
-    background: hsla(220, 30%, 15%, 0.8);
+    background: var(--hover-bg);
 }
 
 .icon {

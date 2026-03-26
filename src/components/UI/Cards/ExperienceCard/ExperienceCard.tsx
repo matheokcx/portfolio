@@ -3,13 +3,15 @@ import styles from "./experience-card.module.css";
 
 type ExperienceCardProps = {
     experience: Experience;
+    locale?: string;
 };
 
-const formatDate = (date: Date): string => {
-    return date.toLocaleDateString("fr-FR", {month: "long", year: "numeric"});
+const formatDate = (date: Date, locale: string): string => {
+    const loc = locale === "fr" ? "fr-FR" : "en-US";
+    return date.toLocaleDateString(loc, {month: "long", year: "numeric"});
 };
 
-const ExperienceCard = ({experience}: ExperienceCardProps) => {
+const ExperienceCard = ({experience, locale = "fr"}: ExperienceCardProps) => {
     const isSameDate = experience.startDate.getTime() === experience.endDate.getTime();
 
     return (
@@ -20,8 +22,8 @@ const ExperienceCard = ({experience}: ExperienceCardProps) => {
             </div>
             <p className={styles.dates}>
                 {isSameDate
-                    ? formatDate(experience.startDate)
-                    : `${formatDate(experience.startDate)} — ${formatDate(experience.endDate)}`
+                    ? formatDate(experience.startDate, locale)
+                    : `${formatDate(experience.startDate, locale)} — ${formatDate(experience.endDate, locale)}`
                 }
             </p>
         </div>
