@@ -8,7 +8,7 @@ const ProjectsSection = () => {
 
     return (
         <section className={styles.projectsSection} id="projects">
-            <h2 style={{textAlign: "center"}}>Mes super projets</h2>
+            <h2>Mes projets</h2>
             <div className={styles.projects}>
                 {projects.map((project: Project) => <ProjectCard key={project.name} project={project}/>)}
             </div>

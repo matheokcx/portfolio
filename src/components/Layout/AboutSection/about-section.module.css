@@ -1,18 +1,36 @@
 .aboutSection {
     display: flex;
     justify-content: space-between;
-    gap: 24px;
-    padding-inline: 48px;
+    gap: 40px;
+    padding: 40px;
     align-items: center;
     background: var(--background-color);
+    border-radius: 16px;
 }
 
 .explanationDiv {
-    width: 40%;
+    flex: 1;
     display: grid;
-    gap: 10px;
+    gap: 12px;
 }
 
 .aboutSection img {
-    width: 30%;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .aboutSection {
+        flex-direction: column-reverse;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .aboutSection img {
+        width: 160px;
+        height: 160px;
+    }
 }

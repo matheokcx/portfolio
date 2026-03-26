@@ -1,9 +1,56 @@
 .skillsSection {
+    display: grid;
+    gap: 20px;
+}
 
+.filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filterBtn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: transparent;
+    color: var(--secondary-text-color);
+    border: 1px solid var(--border);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filterBtn:hover {
+    background: hsla(220, 40%, 25%, 0.2);
+    color: var(--primary-text-color);
+}
+
+.filterBtnActive {
+    background: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.filterBtnActive:hover {
+    background: var(--accent-color);
 }
 
 .skills {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px 24px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

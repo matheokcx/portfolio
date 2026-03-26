@@ -3,6 +3,7 @@ import AboutSection from "./components/Layout/AboutSection/AboutSection.tsx";
 import SkillsSection from "./components/Layout/SkillsSection/SkillsSection.tsx";
 import ProjectsSection from "./components/Layout/ProjectsSection/ProjectsSection.tsx";
 import ExperiencesSection from "./components/Layout/ExperiencesSection/ExperiencesSection.tsx";
+import Footer from "./components/Layout/Footer/Footer.tsx";
 
 const App = () => {
     return (
@@ -10,8 +11,9 @@ const App = () => {
             <HeroSection/>
             <AboutSection/>
             <SkillsSection/>
-            <ProjectsSection/>
             <ExperiencesSection/>
+            <ProjectsSection/>
+            <Footer/>
         </>
     );
 };

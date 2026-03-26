@@ -1,5 +1,31 @@
 .experienceCard {
-    border: 2px solid hsla(0, 0%, 20%, 50%);
-    padding: 10px;
-    border-radius: 10px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: var(--background-color);
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experienceCard:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: grid;
+    gap: 12px;
+}
+
+.company {
+    color: var(--accent-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dates {
+    font-size: 13px;
+    color: var(--secondary-text-color);
 }

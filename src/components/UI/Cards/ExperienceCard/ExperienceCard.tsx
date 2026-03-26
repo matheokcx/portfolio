@@ -5,18 +5,24 @@ type ExperienceCardProps = {
     experience: Experience;
 };
 
+const formatDate = (date: Date): string => {
+    return date.toLocaleDateString("fr-FR", {month: "long", year: "numeric"});
+};
+
 const ExperienceCard = ({experience}: ExperienceCardProps) => {
+    const isSameDate = experience.startDate.getTime() === experience.endDate.getTime();
+
     return (
         <div className={styles.experienceCard}>
-            <h3>{experience.job}</h3>
-            <p>
-                <span>{experience.company}</span>
-                {" | "}
-                <span>
-                    {experience.startDate.toISOString().split("T")[0]}
-                    {" to "}
-                    {experience.endDate.toISOString().split("T")[0]}
-                </span>
+            <div className={styles.header}>
+                <h3>{experience.job}</h3>
+                <span className={styles.company}>{experience.company}</span>
+            </div>
+            <p className={styles.dates}>
+                {isSameDate
+                    ? formatDate(experience.startDate)
+                    : `${formatDate(experience.startDate)} — ${formatDate(experience.endDate)}`
+                }
             </p>
         </div>
     );

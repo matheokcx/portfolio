@@ -7,14 +7,14 @@ type SkillCardProps = {
 
 const SkillCard = ({skill}: SkillCardProps) => {
     return (
-        <div className={styles.skillCard} style={{borderColor: skill.color ?? "hsla(0, 0%, 20%, 40%)"}}>
+        <div className={styles.skillCard}>
             {skill.icon && (typeof skill.icon === "string" ? (
                 <img src={skill.icon}
                      alt={`${skill.name} icon`}
                      className={styles.icon}
                 />
             ) : skill.icon)}
-            <p style={{textAlign: "center", fontWeight: "600"}}>{skill.name}</p>
+            <p className={styles.name}>{skill.name}</p>
         </div>
     );
 };

@@ -1,12 +1,11 @@
 .experiencesSection {
-
+    display: grid;
+    gap: 20px;
 }
 
 .experiences {
-    border-width: 0 0 0 2px;
-    border-style: solid;
-    border-color: var(--border);
+    border-left: 2px solid var(--border);
     display: grid;
-    gap: 20px;
-    padding: 20px 32px;
+    gap: 16px;
+    padding-left: 24px;
 }

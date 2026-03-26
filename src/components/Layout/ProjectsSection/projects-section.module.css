@@ -1,9 +1,23 @@
 .projectsSection {
-
+    display: grid;
+    gap: 20px;
+    text-align: center;
 }
 
 .projects {
     display: grid;
-    gap: 32px;
+    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
 }
