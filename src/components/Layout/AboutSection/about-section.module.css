@@ -15,11 +15,12 @@
 }
 
 .aboutSection img {
-    width: 240px;
-    height: 240px;
+    width: 260px;
+    height: 260px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 20px;
     flex-shrink: 0;
+    border: 1px solid var(--border);
 }
 
 @media (max-width: 768px) {

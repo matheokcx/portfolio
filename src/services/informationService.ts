@@ -162,7 +162,7 @@ export const getProjects = (): Project[] => {
         {
             name: "RentaCarLens",
             description: "Application client, serveur API et app mobile pour la location de véhicules.",
-            images: ["/projects/fit-track/Logo.webp"],
+            images: ["/projects/renta-car-lens/Logo.png"],
             tools: [
                 {name: "Angular", color: "#DD0031"},
                 {name: "Laravel", color: "#FF2D20"},
