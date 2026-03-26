@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title1": "I build complete web applications,",
+    "title2": "ready to scale.",
+    "description": "Currently looking for a work-study program for a Master's degree in IT Project Management.",
+    "contact": "Contact me",
+    "projects": "My projects"
+  },
+  "about": {
+    "title": "About",
+    "paragraph1": "Fullstack developer passionate about building web applications with solid architecture. I mainly work with React and Symfony to build fullstack solutions, from front-end to back-end. Curious and detail-oriented, I enjoy understanding business needs and turning them into concrete features.",
+    "paragraph2": "Currently in my 3rd year of a Computer Science degree, I'm looking for a work-study position in application development for a Master's degree. My goal: combine my technical expertise with project management skills to support teams and invest in projects from start to finish."
+  },
+  "skills": {
+    "title": "My skills",
+    "filterAll": "All",
+    "filterLanguages": "Languages",
+    "filterLibraries": "Libraries",
+    "filterFrameworks": "Frameworks",
+    "filterTools": "Tools"
+  },
+  "projects": {
+    "title": "My projects",
+    "viewProject": "View project →"
+  },
+  "experiences": {
+    "title": "My professional experience"
+  },
+  "footer": {
+    "role": "FullStack Developer"
+  },
+  "data": {
+    "projects": {
+      "kraft": "Complete web application for client and project management (CRM-like).",
+      "rentacarlens": "Client app, API server and mobile app for vehicle rental.",
+      "fittrack": "Mobile app for tracking workouts and nutrition."
+    },
+    "experiences": {
+      "fullstack": "FullStack Developer (Work-Study)",
+      "cashier": "Event catering cashier"
+    }
+  }
+}

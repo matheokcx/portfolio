@@ -1,0 +1,37 @@
+.aboutSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+    background: var(--background-color);
+    border-radius: 16px;
+}
+
+.explanationDiv {
+    flex: 1;
+    display: grid;
+    gap: 12px;
+}
+
+.aboutSection img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+    border: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+    .aboutSection {
+        flex-direction: column-reverse;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .aboutSection img {
+        width: 160px;
+        height: 160px;
+    }
+}

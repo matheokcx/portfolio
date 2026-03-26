@@ -1,0 +1,90 @@
+.footer {
+    margin-top: 40px;
+    padding: 40px 24px 24px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.brand p {
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.links {
+    display: flex;
+    gap: 24px;
+}
+
+.links a {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+}
+
+.links a:hover {
+    color: var(--primary-text-color);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.socials {
+    display: flex;
+    gap: 16px;
+}
+
+.socials a {
+    color: var(--secondary-text-color);
+    transition: color 0.2s ease;
+}
+
+.socials a:hover {
+    color: var(--accent-color);
+}
+
+.langToggle {
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--secondary-text-color);
+    border: 1px solid var(--border);
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.langToggle:hover {
+    color: var(--primary-text-color);
+    border-color: var(--accent-color);
+}
+
+.bottom {
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.bottom p {
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}

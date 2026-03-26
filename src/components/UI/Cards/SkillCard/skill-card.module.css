@@ -1,0 +1,25 @@
+.skillCard {
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--card-background-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background 0.2s ease;
+}
+
+.skillCard:hover {
+    background: var(--hover-bg);
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 14px;
+}
