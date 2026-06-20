@@ -95,7 +95,7 @@ jobs:
         uses: appleboy/ssh-action@v1
         env:
           IMAGE: ${{ needs.build-and-push.outputs.image }}
-          APP_PORT: ${{ vars.APP_PORT || '8080' }}
+          APP_PORT: ${{ vars.APP_PORT || '8081' }}
         with:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
