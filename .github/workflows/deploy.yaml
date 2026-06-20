@@ -65,6 +65,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check required secrets are present
+        env:
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          VPS_PORT: ${{ secrets.VPS_PORT }}
+          GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
+        run: |
+          missing=0
+          for name in VPS_HOST VPS_USER VPS_SSH_KEY VPS_PORT GHCR_TOKEN; do
+            val="${!name}"
+            if [ -z "$val" ]; then
+              echo "::error::Secret $name is EMPTY or not set"
+              missing=1
+            else
+              echo "$name: set (value length ${#val})"
+            fi
+          done
+          echo "VPS_SSH_KEY length: ${#VPS_SSH_KEY}"
+          echo "VPS_SSH_KEY first line: $(printf '%s' "$VPS_SSH_KEY" | head -n1)"
+          echo "VPS_SSH_KEY last line: $(printf '%s' "$VPS_SSH_KEY" | tail -n1)"
+          if [ "$missing" != "0" ]; then
+            echo "::error::One or more required secrets are missing. Fix them in Settings > Secrets and variables > Actions (repository secrets)."
+            exit 1
+          fi
+
       - name: Pull & run image on the VPS over SSH
         uses: appleboy/ssh-action@v1
         env:
