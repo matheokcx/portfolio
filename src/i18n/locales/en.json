@@ -39,5 +39,7 @@
       "fullstack": "FullStack Developer (Work-Study)",
       "cashier": "Event catering cashier"
     }
-  }
+  },
+  "light": "Light",
+  "dark": "Dark"
 }

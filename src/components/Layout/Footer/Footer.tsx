@@ -1,5 +1,6 @@
 import {useTranslation} from "react-i18next";
 import styles from "./footer.module.css";
+import ThemeButton from "../../UI/ThemeButton.tsx";
 
 const Footer = () => {
     const {t, i18n} = useTranslation();
@@ -42,6 +43,7 @@ const Footer = () => {
                 <button className={styles.langToggle} onClick={toggleLanguage}>
                     {i18n.language !== "fr" ? "EN" : "FR"}
                 </button>
+                <ThemeButton />
             </div>
         </footer>
     );
