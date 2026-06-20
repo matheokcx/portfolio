@@ -39,5 +39,7 @@
       "fullstack": "Alternance développeur FullStack",
       "cashier": "Caissier restauration événementiel"
     }
-  }
+  },
+  "light": "Clair",
+  "dark": "Sombre"
 }
